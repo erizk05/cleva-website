@@ -1,0 +1,867 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CLEVA | Precision Electric Fleet Vehicles for Enterprises & Cities</title>
+    
+    <!-- Primary SEO Metadata -->
+    <meta name="description" content="CLEVA architectures state-of-the-art zero-emission commercial electric fleet vehicles, delivery vans, transit systems, and intelligent grid integrations for modern enterprises & cities." />
+    <meta name="keywords" content="CLEVA, electric vehicles, commercial EV, electric fleets, zero emission logistics, municipal delivery, green logistics, clean energy transportation, fleet decarbonization, EV savings calculator" />
+    <meta name="author" content="CLEVA Electric Vehicles" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://cleva.ev" />
+
+    <!-- Open Graph / Meta tags for Social Media (Facebook, LinkedIn, Slack) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="CLEVA | Precision Electric Fleet Vehicles for Enterprises & Cities" />
+    <meta property="og:description" content="Decarbonize commercial transit networks and optimize logistics cost structures with high-uptime commercial electric chassis and fleet telematics by CLEVA." />
+    <meta property="og:url" content="https://cleva.ev" />
+    <meta property="og:site_name" content="CLEVA Electric Vehicles" />
+    
+    <!-- Twitter Social Cards -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="CLEVA | Precision Electric Fleet Vehicles" />
+    <meta name="twitter:description" content="Architecting state-of-the-art zero-emission commercial electric fleets, urban transit, and cargo models for smart cities." />
+    
+    <!-- Structured JSON-LD Data for Rich Search Results -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "CLEVA Electric Vehicles",
+        "url": "https://cleva.ev",
+        "logo": "https://ais-pre-q7gsf53rdwtwzxbfsxebyx-43123288234.asia-southeast1.run.app/assets/logo.png",
+        "description": "B2B mobility architects, partnering with municipalities and corporations to transition commercial logistics safely and cost-effectively into the zero-emissions era.",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Detroit",
+          "addressRegion": "MI",
+          "addressCountry": "USA"
+        },
+        "sameAs": [
+          "https://twitter.com/cleva_ev",
+          "https://linkedin.com/company/cleva_ev"
+        ]
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "CLEVA Fleet Savings Calculator",
+        "description": "Interactive investment simulator to compute operational expense reductions, diesel offset, and CO2 offset from commercial EV transitions.",
+        "applicationCategory": "BusinessApplication"
+      }
+    </script>
+
+    <link rel="stylesheet" href="/src/style.css">
+    <script>
+      // Zero-flicker theme initialization
+      (function() {
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme === 'dark' || (!savedTheme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+          document.documentElement.classList.add('dark-theme');
+        } else {
+          document.documentElement.classList.remove('dark-theme');
+        }
+      })();
+    </script>
+  </head>
+  <body>
+
+    <!-- 1. TOP NAVIGATION BAR -->
+    <header class="navbar" id="navbar">
+      <div class="container navbar-container">
+        <!-- Brand Logo -->
+        <a href="index.html" class="nav-brand" id="nav-brand-logo">
+          <div class="nav-brand-main">
+            <div class="cleva-logo-container">
+              <svg viewBox="0 0 100 100" class="cleva-logo-svg">
+                <g class="cleva-arcs-group">
+                  <!-- Arc 1: Top-Left (Slate-900 / Dark theme white) -->
+                  <path d="M 18,48 A 32,32 0 0,1 48,18" fill="none" stroke="currentColor" stroke-width="10" stroke-linecap="round" />
+                  <!-- Arc 2: Top-Right (Green) -->
+                  <path d="M 52,18 A 32,32 0 0,1 82,48" fill="none" stroke="#22c55e" stroke-width="10" stroke-linecap="round" />
+                  <!-- Arc 3: Bottom-Right (Light Lime Green) -->
+                  <path d="M 82,52 A 32,32 0 0,1 52,82" fill="none" stroke="#a3e635" stroke-width="10" stroke-linecap="round" />
+                  <!-- Arc 4: Bottom-Left (Slate Grey) -->
+                  <path d="M 48,82 A 32,32 0 0,1 18,52" fill="none" stroke="#64748b" stroke-width="10" stroke-linecap="round" />
+                </g>
+              </svg>
+            </div>
+            <span class="cleva-brand-text">CLEVA</span>
+          </div>
+          <span class="cleva-slogan">Cleaner Air for a Healthier Future</span>
+        </a>
+        
+        <!-- Navigation Menu Links -->
+        <nav>
+          <ul class="nav-links" id="nav-links">
+            <li><a href="index.html" class="nav-link active">Home</a></li>
+            <li><a href="vehicles.html" class="nav-link">Vehicles</a></li>
+            <li><a href="calculator.html" class="nav-link">Savings Calculator</a></li>
+            <li><a href="features.html" class="nav-link">B2B Integration</a></li>
+            <li><a href="about-us.html" class="nav-link">About Us</a></li>
+            <li><a href="contact.html" class="nav-link">Contact Us</a></li>
+            <li>
+              <button class="btn btn-primary" style="padding: 10px 20px; font-size: 14px; margin-left: 12px;" data-quote-trigger="general">
+                Request Quote
+              </button>
+            </li>
+
+          </ul>
+        </nav>
+
+        <!-- Responsive Burger Trigger -->
+        <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle Navigation Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <!-- GRAND HERO SECTION -->
+      <section class="hero" id="hero">
+        <div class="container hero-grid">
+          <div class="hero-content">
+            <span class="badge">Enterprise Fleet Solutions</span>
+            <h1 class="hero-title" id="main-hero-headline">The Commercial Electric Fleet Standard</h1>
+            <p class="hero-description">
+              Equip your enterprise or municipality with state-of-the-art utility, transit, and micro-cargo electric vehicles. Precision engineered to maximize operating uptime, minimize total cost of ownership (TCO), and meet federal carbon guidelines.
+            </p>
+            <div class="hero-actions">
+              <button class="btn btn-primary" id="hero-quote-cta" data-quote-trigger="general">Request a Quote</button>
+              <a href="vehicles.html" class="btn btn-secondary" id="hero-explore-cta">Explore Range Specs</a>
+            </div>
+          </div>
+          
+          <div class="hero-visual" id="hero-main-illustration">
+            <div class="hero-ellipse"></div>
+            <!-- High-End Isometric Technical EV Wireframe Illustration -->
+            <svg viewBox="0 0 500 400" width="100%" height="auto">
+              <defs>
+                <linearGradient id="blueprintGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#10b981" stop-opacity="0.2" />
+                  <stop offset="100%" stop-color="#10b981" stop-opacity="0.0" />
+                </linearGradient>
+                <linearGradient id="glowGrad" x1="0%" y1="100%" x2="0%" y2="0%">
+                  <stop offset="0%" stop-color="#10b981" />
+                  <stop offset="100%" stop-color="transparent" />
+                </linearGradient>
+              </defs>
+              
+              <!-- Ground Plane Grid lines representing virtual testing facility -->
+              <path d="M 50,300 L 450,300 M 50,340 L 450,340 M 100,280 L 100,360 M 200,280 L 200,360 M 300,280 L 300,360 M 400,280 L 400,360" stroke="#ebdcb0" stroke-width="0.5" stroke-dasharray="3,3" opacity="0.3"></path>
+              
+              <!-- Chassis outline (Van-like silhouette) in high-tech lineart styled CSS -->
+              <path d="M 120,290 L 140,160 L 220,150 L 360,165 L 380,240 L 370,290" fill="url(#blueprintGrad)" stroke="#10b981" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+              <!-- Cab Window & Windshield -->
+              <path d="M 145,170 L 155,230 L 180,230 L 185,165 Z" fill="rgba(16, 185, 129, 0.15)" stroke="#10b981" stroke-width="1.5"></path>
+              <path d="M 195,160 L 200,230 L 260,230 L 255,158 Z" fill="rgba(16, 185, 129, 0.1)" stroke="#10b981" stroke-width="1.5"></path>
+              <!-- Rear Panel detailing -->
+              <path d="M 270,160 L 350,168 L 355,290 L 270,290 Z" stroke="#10b981" stroke-width="1.5" stroke-dasharray="4,2"></path>
+              
+              <!-- Decorative Powertrain highlight under the vehicle -->
+              <ellipse cx="250" cy="305" rx="140" ry="25" fill="none" stroke="url(#glowGrad)" stroke-width="6" opacity="0.8"></ellipse>
+              <!-- Glowing Battery cell pack center of gravity block -->
+              <rect x="200" y="275" width="100" height="15" rx="3" fill="#10b981" opacity="0.3" stroke="#10b981" stroke-width="2"></rect>
+              <line x1="250" y1="275" x2="250" y2="290" stroke="#ffffff" stroke-width="2"></line>
+              
+              <!-- Front Wheel Hub -->
+              <circle cx="170" cy="290" r="30" fill="#0f172a" stroke="#10b981" stroke-width="2.5"></circle>
+              <circle cx="170" cy="290" r="14" fill="#1e293b" stroke="#ffffff" stroke-width="1"></circle>
+              <!-- Rear Wheel Hub -->
+              <circle cx="330" cy="290" r="30" fill="#0f172a" stroke="#10b981" stroke-width="2.5"></circle>
+              <circle cx="330" cy="290" r="14" fill="#1e293b" stroke="#ffffff" stroke-width="1"></circle>
+              
+              <!-- Flow Vectors representing clean aerodynamic efficiency -->
+              <path d="M 40,190 Q 90,195 130,165 M 35,210 Q 100,215 135,190 M 20,240 Q 110,245 155,230" stroke="#10b981" stroke-width="2" stroke-linecap="round" opacity="0.4" stroke-dasharray="10,5"></path>
+              <circle cx="130" cy="165" r="3" fill="#10b981"></circle>
+              <circle cx="135" cy="190" r="3" fill="#10b981"></circle>
+              <circle cx="155" cy="230" r="3" fill="#10b981"></circle>
+              
+              <!-- Text metadata overlay in top right for extreme corporate style -->
+              <text x="320" y="50" fill="#64748b" font-family="monospace" font-size="11px">CLEVA-CHASSIS SPEC // 2026</text>
+              <text x="320" y="68" fill="#10b981" font-family="monospace" font-size="11px">DRIVETRAIN: DUAL EV-MOTOR</text>
+              <text x="320" y="86" fill="#64748b" font-family="monospace" font-size="11px">AERODYNAMIC INDEX: 0.22 Cd</text>
+            </svg>
+          </div>
+        </div>
+      </section>
+
+      <!-- VEHICLE SHOWCASE IMAGE SLIDER -->
+      <section class="slider-section" id="featured-slider-section">
+        <div class="container animate-on-scroll">
+          <div class="section-header" style="text-align: center; margin-bottom: 50px;">
+            <span class="slide-badge" style="margin-bottom: 12px; font-weight: 800;">Enterprise Fleet Showcase</span>
+            <h2 class="section-title" style="font-size: 36px; margin-bottom: 16px; font-weight: 800;">Featured CLEVA Fleet Series</h2>
+            <p class="section-desc" style="max-width: 600px; margin: 0 auto; color: var(--color-text-secondary);">Interactive breakdown of our industry-leading Zero-Emission platforms. Interact or slide to compare operational stats and range capacity.</p>
+          </div>
+
+          <div class="vehicle-slider-wrapper">
+            <!-- Left Arrow Button -->
+            <button class="slider-arrow slider-arrow-prev" id="slider-prev" aria-label="Previous Slide">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="19" y1="12" x2="5" y2="12"></line>
+                <polyline points="12 19 5 12 12 5"></polyline>
+              </svg>
+            </button>
+
+            <!-- Slider Viewport Window -->
+            <div class="vehicle-slider-viewport">
+              <div class="vehicle-slider-track" id="slider-track">
+                
+                <!-- Slide 1: Commercial Electric Vehicles -->
+                <div class="vehicle-slide">
+                  <div class="slide-content-left">
+                    <span class="slide-badge">Heavy Logistics / Last-Mile</span>
+                    <h3 class="slide-title">Commercial Electric Vehicles</h3>
+                    <p class="slide-description">Optimized delivery chassis for urban freight. Built with an all-weather insulated box body, modular shelving, and heavy duty leaf-sprung suspension.</p>
+                    
+                    <div class="slide-stats">
+                      <div class="slide-stat-item">
+                        <span class="slide-stat-label">Est. Range</span>
+                        <span class="slide-stat-value">220 - 280 Mi</span>
+                      </div>
+                      <div class="slide-stat-item">
+                        <span class="slide-stat-label">Payload Limit</span>
+                        <span class="slide-stat-value">4,500 Lbs</span>
+                      </div>
+                      <div class="slide-stat-item">
+                        <span class="slide-stat-label">DC Fast Charge</span>
+                        <span class="slide-stat-value">35 Mins (80%)</span>
+                      </div>
+                    </div>
+
+                    <div class="slide-actions">
+                      <button class="btn btn-primary" data-quote-trigger="van">Request Quote</button>
+                      <a href="vehicles.html#product-van-card" class="btn btn-secondary">Learn More</a>
+                    </div>
+                  </div>
+                  <div class="slide-graphic-right">
+                    <svg viewBox="0 0 200 120" width="100%" height="auto">
+                      <path d="M 15 80 L 15 50 Q 15 45 20 45 L 45 45 L 60 25 L 85 25 Q 92 25 100 30 L 180 32 Q 185 32 185 38 L 185 80 Z" fill="#ffffff" stroke="#1e293b" stroke-width="2.5"></path>
+                      <line x1="45" y1="45" x2="45" y2="80" stroke="#10b981" stroke-width="1.5"></line>
+                      <path d="M 60 25 L 60 80 M 115 32 L 115 80" stroke="#e2e8f0" stroke-width="1.5"></path>
+                      <path d="M 63 32 L 82 32 Q 87 32 92 36 L 97 45 L 63 45 Z" fill="#f1f5f9" stroke="#1e293b" stroke-width="2"></path>
+                      <circle cx="50" cy="80" r="14" fill="#1e293b" stroke="#10b981" stroke-width="2"></circle>
+                      <circle cx="150" cy="80" r="14" fill="#1e293b" stroke="#10b981" stroke-width="2"></circle>
+                    </svg>
+                  </div>
+                </div>
+
+                <!-- Slide 2: PWD EVs -->
+                <div class="vehicle-slide">
+                  <div class="slide-content-left">
+                    <span class="slide-badge">ADA-Compliant Accessibility</span>
+                    <h3 class="slide-title">PWD EVs (Accessible)</h3>
+                    <p class="slide-description">Fully ADA-compliant with automated hydraulic low-angle ramp systems, customizable magnetic floor anchors, and low step-in chassis profiles for urban transit.</p>
+                    
+                    <div class="slide-stats">
+                      <div class="slide-stat-item">
+                        <span class="slide-stat-label">Est. Range</span>
+                        <span class="slide-stat-value">180 - 240 Mi</span>
+                      </div>
+                      <div class="slide-stat-item">
+                        <span class="slide-stat-label">Configuration</span>
+                        <span class="slide-stat-value">3 Chairs + 6 Seats</span>
+                      </div>
+                      <div class="slide-stat-item">
+                        <span class="slide-stat-label">Ramp Deploy</span>
+                        <span class="slide-stat-value">Auto (6.2s)</span>
+                      </div>
+                    </div>
+
+                    <div class="slide-actions">
+                      <button class="btn btn-primary" data-quote-trigger="pwd">Request Quote</button>
+                      <a href="vehicles.html#product-pwd-card" class="btn btn-secondary">Learn More</a>
+                    </div>
+                  </div>
+                  <div class="slide-graphic-right">
+                    <svg viewBox="0 0 200 120" width="100%" height="auto">
+                      <path d="M 15 80 L 15 40 Q 15 35 20 35 L 140 35 L 165 42 Q 185 46 185 58 L 185 80 Z" fill="#ffffff" stroke="#1e293b" stroke-width="2.5"></path>
+                      <rect x="25" y="42" width="40" height="20" fill="#f1f5f9" stroke="#1e293b" stroke-width="1.5"></rect>
+                      <rect x="75" y="42" width="40" height="20" fill="#f1f5f9" stroke="#1e293b" stroke-width="1.5"></rect>
+                      <path d="M 125 42 L 145 42 L 155 52 L 125 52 Z" fill="#f1f5f9" stroke="#1e293b" stroke-width="1.5"></path>
+                      <path d="M 75 80 L 115 80 M 75 76 L 115 76" stroke="#10b981" stroke-width="3"></path>
+                      <circle cx="95" cy="55" r="2.5" fill="#10b981"></circle>
+                      <path d="M 95 57.5 A 3.5 3.5 0 0 1 91 61.5 M 95 57.5 L 98 62" stroke="#10b981" stroke-width="1.2" fill="none"></path>
+                      <circle cx="50" cy="80" r="14" fill="#1e293b" stroke="#10b981" stroke-width="2"></circle>
+                      <circle cx="150" cy="80" r="14" fill="#1e293b" stroke="#10b981" stroke-width="2"></circle>
+                    </svg>
+                  </div>
+                </div>
+
+                <!-- Slide 3: E-Trikes -->
+                <div class="vehicle-slide">
+                  <div class="slide-content-left">
+                    <span class="slide-badge">Campus & Micro-Delivery</span>
+                    <h3 class="slide-title">E-Trikes (Cargo Trikes)</h3>
+                    <p class="slide-description">Compact commercial cargo trikes engineered for university campuses, corporate parks, postal organizations, and crowded zero-emission city districts.</p>
+                    
+                    <div class="slide-stats">
+                      <div class="slide-stat-item">
+                        <span class="slide-stat-label">Est. Range</span>
+                        <span class="slide-stat-value">60 - 90 Mi</span>
+                      </div>
+                      <div class="slide-stat-item">
+                        <span class="slide-stat-label">Cargo Box Vol.</span>
+                        <span class="slide-stat-value">48 Cubic Feet</span>
+                      </div>
+                      <div class="slide-stat-item">
+                        <span class="slide-stat-label">Turning Circle</span>
+                        <span class="slide-stat-value">9.8 Ft (Tight)</span>
+                      </div>
+                    </div>
+
+                    <div class="slide-actions">
+                      <button class="btn btn-primary" data-quote-trigger="trike">Request Quote</button>
+                      <a href="vehicles.html#product-trike-card" class="btn btn-secondary">Learn More</a>
+                    </div>
+                  </div>
+                  <div class="slide-graphic-right">
+                    <svg viewBox="0 0 200 120" width="100%" height="auto">
+                      <rect x="25" y="40" width="80" height="40" fill="#ffffff" stroke="#1e293b" stroke-width="2" rx="4"></rect>
+                      <line x1="25" y1="50" x2="105" y2="50" stroke="#10b981" stroke-width="1.5"></line>
+                      <path d="M 105 80 L 120 45 L 145 45 L 155 80" fill="none" stroke="#1e293b" stroke-width="2"></path>
+                      <line x1="145" y1="45" x2="165" y2="80" stroke="#1e293b" stroke-width="2.5"></line>
+                      <circle cx="45" cy="84" r="12" fill="#1e293b" stroke="#10b981" stroke-width="1.5"></circle>
+                      <circle cx="85" cy="84" r="12" fill="#1e293b" stroke="#10b981" stroke-width="1.5"></circle>
+                      <circle cx="165" cy="84" r="12" fill="#1e293b" stroke="#10b981" stroke-width="2"></circle>
+                    </svg>
+                  </div>
+                </div>
+
+                <!-- Slide 4: ev4-eREV Shuttles -->
+                <div class="vehicle-slide">
+                  <div class="slide-content-left">
+                    <span class="slide-badge">Extended Range Regional</span>
+                    <h3 class="slide-title">ev4-eREV Shuttles</h3>
+                    <p class="slide-description">Our revolutionary Extended Range Electric (eREV) multi-passenger transit shuttle. Incorporates an onboard clean-gas generator to double regional span.</p>
+                    
+                    <div class="slide-stats">
+                      <div class="slide-stat-item">
+                        <span class="slide-stat-label">Combined Range</span>
+                        <span class="slide-stat-value">450 - 550 Mi</span>
+                      </div>
+                      <div class="slide-stat-item">
+                        <span class="slide-stat-label">B2B Seating</span>
+                        <span class="slide-stat-value">14 Passengers</span>
+                      </div>
+                      <div class="slide-stat-item">
+                        <span class="slide-stat-label">Engine Tech</span>
+                        <span class="slide-stat-value">Series Hybrid Gen</span>
+                      </div>
+                    </div>
+
+                    <div class="slide-actions">
+                      <button class="btn btn-primary" data-quote-trigger="shuttle">Request Quote</button>
+                      <a href="vehicles.html#product-shuttle-card" class="btn btn-secondary">Learn More</a>
+                    </div>
+                  </div>
+                  <div class="slide-graphic-right">
+                    <svg viewBox="0 0 200 120" width="100%" height="auto">
+                      <path d="M 15 75 L 15 42 Q 15 35 22 35 L 178 35 Q 185 35 185 42 L 185 75 Z" fill="#ffffff" stroke="#1e293b" stroke-width="2.5"></path>
+                      <rect x="25" y="42" width="24" height="15" fill="#f1f5f9" stroke="#1e293b" stroke-width="1.5"></rect>
+                      <rect x="55" y="42" width="24" height="15" fill="#f1f5f9" stroke="#1e293b" stroke-width="1.5"></rect>
+                      <rect x="85" y="42" width="24" height="15" fill="#f1f5f9" stroke="#1e293b" stroke-width="1.5"></rect>
+                      <rect x="115" y="42" width="24" height="15" fill="#f1f5f9" stroke="#1e293b" stroke-width="1.5"></rect>
+                      <rect x="145" y="42" width="30" height="15" fill="#f1f5f9" stroke="#1e293b" stroke-width="1.5"></rect>
+                      <line x1="20" y1="65" x2="180" y2="65" stroke="#10b981" stroke-width="1.5" stroke-dasharray="10,4"></line>
+                      <circle cx="50" cy="78" r="14" fill="#1e293b" stroke="#10b981" stroke-width="2"></circle>
+                      <circle cx="150" cy="78" r="14" fill="#1e293b" stroke="#10b981" stroke-width="2"></circle>
+                    </svg>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- Right Arrow Button -->
+            <button class="slider-arrow slider-arrow-next" id="slider-next" aria-label="Next Slide">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </button>
+          </div>
+
+          <!-- Pagination Dots Container -->
+          <div class="slider-pagination" id="slider-pagination">
+            <span class="slider-dot active" data-slide-index="0" aria-label="Go to Slide 1"></span>
+            <span class="slider-dot" data-slide-index="1" aria-label="Go to Slide 2"></span>
+            <span class="slider-dot" data-slide-index="2" aria-label="Go to Slide 3"></span>
+            <span class="slider-dot" data-slide-index="3" aria-label="Go to Slide 4"></span>
+          </div>
+        </div>
+      </section>
+
+      <!-- TRUSTED BY ENTERPRISE PARTNERS SECTION -->
+      <section class="partners-section" id="trusted-by-section">
+        <div class="container animate-on-scroll">
+          <div class="section-header" style="text-align: center; margin-bottom: 45px;">
+            <span class="slide-badge" style="margin-bottom: 12px; font-weight: 800; background-color: var(--color-accent-light); padding: 4px 10px; border-radius: 999px; font-size: 11px; color: var(--color-accent); text-transform: uppercase;">Social Proof</span>
+            <h2 class="section-title" style="font-size: 36px; margin-bottom: 16px; font-weight: 800;">Trusted by Industry Leaders</h2>
+            <p class="section-desc" style="max-width: 650px; margin: 0 auto; color: var(--color-text-secondary);">Empowering key municipal fleets, private enterprise logistics, and global courier networks to transition seamlessly to high-performance zero-emission platforms.</p>
+          </div>
+
+          <!-- Partners Interactive Logos Row (Grid) -->
+          <div class="partners-logos-grid" id="partners-logos-list">
+            
+            <div class="partner-logo-card active" data-partner-index="0" role="button" aria-selected="true" aria-label="OmniParcel Express Testimonial">
+              <div class="partner-logo-svg-wrapper">
+                <!-- OmniParcel SVG: Abstract delivery box with motion lines -->
+                <svg viewBox="0 0 120 40" class="partner-logo-svg">
+                  <path d="M 15 10 L 35 10 L 40 20 L 20 20 Z" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"></path>
+                  <path d="M 20 20 L 40 20 L 35 30 L 15 30 Z" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"></path>
+                  <line x1="10" y1="15" x2="25" y2="15" stroke="currentColor" stroke-width="2"></line>
+                  <line x1="8" y1="25" x2="21" y2="25" stroke="currentColor" stroke-width="2"></line>
+                  <text x="50" y="25" font-weight="900" font-size="12" fill="currentColor">OmniParcel</text>
+                </svg>
+              </div>
+              <span class="partner-logo-sub">Logistics Partner</span>
+            </div>
+
+            <div class="partner-logo-card" data-partner-index="1" role="button" aria-selected="false" aria-label="Metro Transit Group Testimonial">
+              <div class="partner-logo-svg-wrapper">
+                <!-- MetroTransit SVG: Double highway track or overlapping infinity loop -->
+                <svg viewBox="0 0 120 40" class="partner-logo-svg">
+                  <path d="M 15 15 C 15 25, 35 25, 35 15 C 35 5, 15 5, 15 15" fill="none" stroke="currentColor" stroke-dasharray="32" stroke-dashoffset="0" stroke-width="3" stroke-linecap="round"></path>
+                  <path d="M 33 15 C 33 25, 53 25, 53 15 C 53 5, 33 5, 33 15" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"></path>
+                  <text x="60" y="25" font-weight="900" font-size="12" fill="currentColor">MetroTransit</text>
+                </svg>
+              </div>
+              <span class="partner-logo-sub">Municipal Transit</span>
+            </div>
+
+            <div class="partner-logo-card" data-partner-index="2" role="button" aria-selected="false" aria-label="Apex Campus Systems Testimonial">
+              <div class="partner-logo-svg-wrapper">
+                <!-- Apex SVG: Mountain peak/overlapping triangles -->
+                <svg viewBox="0 0 120 40" class="partner-logo-svg">
+                  <polygon points="12,30 25,8 38,30" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"></polygon>
+                  <polygon points="26,30 34,16 42,30" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"></polygon>
+                  <text x="48" y="25" font-weight="900" font-size="12" fill="currentColor">ApexCampus</text>
+                </svg>
+              </div>
+              <span class="partner-logo-sub">Campus Transport</span>
+            </div>
+
+            <div class="partner-logo-card" data-partner-index="3" role="button" aria-selected="false" aria-label="GreenCargo Global Testimonial">
+              <div class="partner-logo-svg-wrapper">
+                <!-- GreenCargo SVG: Cargo box / Leaf Arrow -->
+                <svg viewBox="0 0 120 40" class="partner-logo-svg">
+                  <rect x="12" y="10" width="28" height="20" rx="3" fill="none" stroke="currentColor" stroke-width="2.5"></rect>
+                  <path d="M 22 20 Q 26 14 30 26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
+                  <text x="48" y="25" font-weight="900" font-size="12" fill="currentColor">GreenCargo</text>
+                </svg>
+              </div>
+              <span class="partner-logo-sub">Global Logistics</span>
+            </div>
+
+            <div class="partner-logo-card" data-partner-index="4" role="button" aria-selected="false" aria-label="LogiCore Networks Testimonial">
+              <div class="partner-logo-svg-wrapper">
+                <!-- LogiCore SVG: Network central hub grid -->
+                <svg viewBox="0 0 120 40" class="partner-logo-svg">
+                  <circle cx="22" cy="20" r="6" fill="none" stroke="currentColor" stroke-width="2"></circle>
+                  <circle cx="12" cy="12" r="3" fill="currentColor"></circle>
+                  <circle cx="32" cy="12" r="3" fill="currentColor"></circle>
+                  <circle cx="12" cy="28" r="3" fill="currentColor"></circle>
+                  <circle cx="32" cy="28" r="3" fill="currentColor"></circle>
+                  <line x1="14" y1="14" x2="20" y2="18" stroke="currentColor" stroke-width="1.5"></line>
+                  <line x1="30" y1="14" x2="24" y2="18" stroke="currentColor" stroke-width="1.5"></line>
+                  <line x1="14" y1="26" x2="20" y2="22" stroke="currentColor" stroke-width="1.5"></line>
+                  <line x1="30" y1="26" x2="24" y2="22" stroke="currentColor" stroke-width="1.5"></line>
+                  <text x="44" y="25" font-weight="900" font-size="12" fill="currentColor">LogiCore</text>
+                </svg>
+              </div>
+              <span class="partner-logo-sub">Urban Distribution</span>
+            </div>
+
+          </div>
+
+          <!-- Carousel Container for the partners' testimonials and outcomes -->
+          <div class="partner-carousel-wrapper">
+            
+            <!-- Left Arrow Button -->
+            <button class="slider-arrow slider-arrow-prev" id="partner-prev-btn" aria-label="Previous Testimonial">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="19" y1="12" x2="5" y2="12"></line>
+                <polyline points="12 19 5 12 12 5"></polyline>
+              </svg>
+            </button>
+
+            <!-- Testimonial Slider Viewport Window -->
+            <div class="partner-carousel-viewport">
+              <div class="partner-carousel-track" id="partner-carousel-track">
+                
+                <!-- Testimonial 1 -->
+                <div class="partner-testimonial-slide">
+                  <div class="testimonial-layout">
+                    <div class="testimonial-left">
+                      <!-- Giant quotation mark icon -->
+                      <div class="quote-icon">
+                        <svg viewBox="0 0 24 24" width="56" height="56" fill="currentColor" class="text-accent-opacity">
+                          <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v8h-10zm-12 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v8h-10z" />
+                        </svg>
+                      </div>
+                      <blockquote class="partner-quote">
+                        "Integrating CLEVA's Commercial Vans cut our last-mile delivery energy expenses by 68% in the first quarter alone. Their modular shelving chassis makes loading incredibly efficient and our driver turnover is down 40%."
+                      </blockquote>
+                      <div class="partner-author">
+                        <span class="author-name">Marcus Vance</span>
+                        <span class="author-title">VP of Logistics Operations @ OmniParcel Express</span>
+                      </div>
+                    </div>
+
+                    <div class="testimonial-right">
+                      <div class="performance-stats-card">
+                        <h4 class="performance-stats-title">Enterprise Scale Impact</h4>
+                        <div class="outcome-stats-grid">
+                          <div class="outcome-stat">
+                            <span class="outcome-value" style="color: var(--color-accent);">68%</span>
+                            <span class="outcome-label">Energy Cost Cut</span>
+                          </div>
+                          <div class="outcome-stat">
+                            <span class="outcome-value">4.5M</span>
+                            <span class="outcome-label">Annual Miles Run</span>
+                          </div>
+                          <div class="outcome-stat">
+                            <span class="outcome-value">1,240T</span>
+                            <span class="outcome-label">Carbon Offset (Yearly)</span>
+                          </div>
+                        </div>
+                        <div class="social-proof-cta-wrapper">
+                          <button class="btn btn-primary btn-cta-block" data-quote-trigger="van" style="width: 100%;">
+                            Request Van Custom Fleet Quote
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="partner-testimonial-slide">
+                  <div class="testimonial-layout">
+                    <div class="testimonial-left">
+                      <div class="quote-icon">
+                        <svg viewBox="0 0 24 24" width="56" height="56" fill="currentColor" class="text-accent-opacity">
+                          <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v8h-10zm-12 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v8h-10z" />
+                        </svg>
+                      </div>
+                      <blockquote class="partner-quote">
+                        "Our municipal transit network saw immediate improvements in accessibility operations. The automated hydraulic ramps on the PWD EVs deploy in just over 6 seconds, reducing transfer-stop latency."
+                      </blockquote>
+                      <div class="partner-author">
+                        <span class="author-name">Director Eleanor Sterling</span>
+                        <span class="author-title">Metro Transit Authority (MTA)</span>
+                      </div>
+                    </div>
+
+                    <div class="testimonial-right">
+                      <div class="performance-stats-card">
+                        <h4 class="performance-stats-title">Enterprise Scale Impact</h4>
+                        <div class="outcome-stats-grid">
+                          <div class="outcome-stat">
+                            <span class="outcome-value" style="color: var(--color-accent);">&lt; 7s</span>
+                            <span class="outcome-label">Automated Ramp Deploy</span>
+                          </div>
+                          <div class="outcome-stat">
+                            <span class="outcome-value">100%</span>
+                            <span class="outcome-label">ADA Compliant</span>
+                          </div>
+                          <div class="outcome-stat">
+                            <span class="outcome-value">450K</span>
+                            <span class="outcome-label">Commutes Served</span>
+                          </div>
+                        </div>
+                        <div class="social-proof-cta-wrapper">
+                          <button class="btn btn-primary btn-cta-block" data-quote-trigger="pwd" style="width: 100%;">
+                            Request Transit Custom Fleet Quote
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="partner-testimonial-slide">
+                  <div class="testimonial-layout">
+                    <div class="testimonial-left">
+                      <div class="quote-icon">
+                        <svg viewBox="0 0 24 24" width="56" height="56" fill="currentColor" class="text-accent-opacity">
+                          <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v8h-10zm-12 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v8h-10z" />
+                        </svg>
+                      </div>
+                      <blockquote class="partner-quote">
+                        "Deployment of E-Trikes across our 15,000-acre university systems reduced intra-campus transport bottlenecks by 55%, while aligning perfectly with our zero-pollution targets."
+                      </blockquote>
+                      <div class="partner-author">
+                        <span class="author-name">Dr. Arthur Finch</span>
+                        <span class="author-title">Sustainability Coordinator @ Apex Campus Systems</span>
+                      </div>
+                    </div>
+
+                    <div class="testimonial-right">
+                      <div class="performance-stats-card">
+                        <h4 class="performance-stats-title">Enterprise Scale Impact</h4>
+                        <div class="outcome-stats-grid">
+                          <div class="outcome-stat">
+                            <span class="outcome-value" style="color: var(--color-accent);">55%</span>
+                            <span class="outcome-label">Transit Decongestion</span>
+                          </div>
+                          <div class="outcome-stat">
+                            <span class="outcome-value">9.8 Ft</span>
+                            <span class="outcome-label">Turning Circle Radius</span>
+                          </div>
+                          <div class="outcome-stat">
+                            <span class="outcome-value">340T</span>
+                            <span class="outcome-label">Direct Fuel Offset</span>
+                          </div>
+                        </div>
+                        <div class="social-proof-cta-wrapper">
+                          <button class="btn btn-primary btn-cta-block" data-quote-trigger="trike" style="width: 100%;">
+                            Request Trike Custom Fleet Quote
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Testimonial 4 -->
+                <div class="partner-testimonial-slide">
+                  <div class="testimonial-layout">
+                    <div class="testimonial-left">
+                      <div class="quote-icon">
+                        <svg viewBox="0 0 24 24" width="56" height="56" fill="currentColor" class="text-accent-opacity">
+                          <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v8h-10zm-12 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v8h-10z" />
+                        </svg>
+                      </div>
+                      <blockquote class="partner-quote">
+                        "Using CLEVA's ev4-eREV Shuttles allowed regional transfers to run without the usual range anxiety of early electric fleets. The onboard clean-gas generator doubles municipal regional span to 550 miles effortlessly."
+                      </blockquote>
+                      <div class="partner-author">
+                        <span class="author-name">Sophia Patel</span>
+                        <span class="author-title">Head of Green Fleet Procurement @ GreenCargo Global</span>
+                      </div>
+                    </div>
+
+                    <div class="testimonial-right">
+                      <div class="performance-stats-card">
+                        <h4 class="performance-stats-title">Enterprise Scale Impact</h4>
+                        <div class="outcome-stats-grid">
+                          <div class="outcome-stat">
+                            <span class="outcome-value" style="color: var(--color-accent);">550 Mi</span>
+                            <span class="outcome-label">Max eREV Range</span>
+                          </div>
+                          <div class="outcome-stat">
+                            <span class="outcome-value">94%</span>
+                            <span class="outcome-label">Fleet Duty Availability</span>
+                          </div>
+                          <div class="outcome-stat">
+                            <span class="outcome-value">25</span>
+                            <span class="outcome-label">Shuttles Deployed</span>
+                          </div>
+                        </div>
+                        <div class="social-proof-cta-wrapper">
+                          <button class="btn btn-primary btn-cta-block" data-quote-trigger="shuttle" style="width: 100%;">
+                            Request Shuttle Custom Fleet Quote
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Testimonial 5 -->
+                <div class="partner-testimonial-slide">
+                  <div class="testimonial-layout">
+                    <div class="testimonial-left">
+                      <div class="quote-icon">
+                        <svg viewBox="0 0 24 24" width="56" height="56" fill="currentColor" class="text-accent-opacity">
+                          <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v8h-10zm-12 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v8h-10z" />
+                        </svg>
+                      </div>
+                      <blockquote class="partner-quote">
+                        "With their rapid DC Fast Charging capabilities and robust payload integrity, CLEVA provides the gold standard for high-volume urban distributions. The downtime was reduced to zero percent overnight."
+                      </blockquote>
+                      <div class="partner-author">
+                        <span class="author-name">James Lawson</span>
+                        <span class="author-title">Chief Supply Chain Officer @ LogiCore Networks</span>
+                      </div>
+                    </div>
+
+                    <div class="testimonial-right">
+                      <div class="performance-stats-card">
+                        <h4 class="performance-stats-title">Enterprise Scale Impact</h4>
+                        <div class="outcome-stats-grid">
+                          <div class="outcome-stat">
+                            <span class="outcome-value" style="color: var(--color-accent);">35 Min</span>
+                            <span class="outcome-label">Fast Charge Window</span>
+                          </div>
+                          <div class="outcome-stat">
+                            <span class="outcome-value">0%</span>
+                            <span class="outcome-label">Unscheduled Downtime</span>
+                          </div>
+                          <div class="outcome-stat">
+                            <span class="outcome-value">800K</span>
+                            <span class="outcome-label">Tons of Urban Cargo</span>
+                          </div>
+                        </div>
+                        <div class="social-proof-cta-wrapper">
+                          <button class="btn btn-primary btn-cta-block" data-quote-trigger="general" style="width: 100%;">
+                            Request Free General Quote
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- Right Arrow Button -->
+            <button class="slider-arrow slider-arrow-next" id="partner-next-btn-right" aria-label="Next Testimonial">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </button>
+          </div>
+
+          <!-- Pagination Dots Container for Partners Carousel -->
+          <div class="slider-pagination" id="partner-slider-pagination">
+            <span class="slider-dot active" data-partner-dot="0" aria-label="Go to Testimonial 1"></span>
+            <span class="slider-dot" data-partner-dot="1" aria-label="Go to Testimonial 2"></span>
+            <span class="slider-dot" data-partner-dot="2" aria-label="Go to Testimonial 3"></span>
+            <span class="slider-dot" data-partner-dot="3" aria-label="Go to Testimonial 4"></span>
+            <span class="slider-dot" data-partner-dot="4" aria-label="Go to Testimonial 5"></span>
+          </div>
+
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER & CORPORATE COMPLIANCE LINKS -->
+    <footer class="footer-main">
+      <div class="container">
+        <div class="footer-grid" id="footer-menu-grid">
+          
+          <div class="footer-brand">
+            <div class="footer-logo">
+              <div class="footer-logo-main">
+                <div class="cleva-logo-container">
+                  <svg viewBox="0 0 100 100" class="cleva-logo-svg">
+                    <g class="cleva-arcs-group">
+                      <!-- Arc 1: Top-Left -->
+                      <path d="M 18,48 A 32,32 0 0,1 48,18" fill="none" stroke="currentColor" stroke-width="10" stroke-linecap="round" />
+                      <!-- Arc 2: Top-Right -->
+                      <path d="M 52,18 A 32,32 0 0,1 82,48" fill="none" stroke="#22c55e" stroke-width="10" stroke-linecap="round" />
+                      <!-- Arc 3: Bottom-Right -->
+                      <path d="M 82,52 A 32,32 0 0,1 52,82" fill="none" stroke="#a3e635" stroke-width="10" stroke-linecap="round" />
+                      <!-- Arc 4: Bottom-Left -->
+                      <path d="M 48,82 A 32,32 0 0,1 18,52" fill="none" stroke="#64748b" stroke-width="10" stroke-linecap="round" />
+                    </g>
+                  </svg>
+                </div>
+                <span class="cleva-brand-text" style="color: white">CLEVA</span>
+              </div>
+              <span class="cleva-slogan" style="color: #64748b; font-size: 8.5px; opacity: 0.85;">Cleaner Air for a Healthier Future</span>
+            </div>
+            <p style="font-size: 14px; margin-top: 12px; line-height: 1.6;">
+              Architecting state-of-the-art zero-emission transportation frameworks for logistics fleets, campus loops, accessible transport networks, and municipal cities.
+            </p>
+          </div>
+
+          <div class="footer-col">
+            <h4>EV Vehicles</h4>
+            <ul class="footer-links">
+              <li><a href="vehicles.html" class="footer-link">Commercial Delivery Vans</a></li>
+              <li><a href="vehicles.html" class="footer-link">PWD Accessible Fleets</a></li>
+              <li><a href="vehicles.html" class="footer-link">Urban Micro-Cargo Trikes</a></li>
+              <li><a href="vehicles.html" class="footer-link">ev4-eREV Passenger Shuttles</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>B2B Division</h4>
+            <ul class="footer-links">
+              <li><a href="calculator.html" class="footer-link">Savings ROI Calculator</a></li>
+              <li><a href="features.html" class="footer-link">Telematics API Integration</a></li>
+              <li><a href="features.html" class="footer-link">Grid Charging Scaling</a></li>
+              <li><a href="contact.html" class="footer-link">Submit Municipal Tender</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>Governance & Compliance</h4>
+            <ul class="footer-links">
+              <li><a href="features.html" class="footer-link">DOT & FMVSS Certifications</a></li>
+              <li><a href="features.html" class="footer-link">EPA Zero Emissions Compliance</a></li>
+              <li><a href="features.html" class="footer-link">Federal IRA Tax Credit Guidance</a></li>
+              <li><a href="contact.html" class="footer-link">Facility Production Security</a></li>
+            </ul>
+          </div>
+
+        </div>
+
+        <div class="footer-bottom">
+          <p>© 2026 CLEVA Electric Vehicles Corp. All corporate and municipal rights reserved. All specifications subject to change through local grid battery calibrations.</p>
+          <div class="footer-bottom-links">
+            <a href="#" class="footer-link">Terms of Purchase</a>
+            <a href="#" class="footer-link">Privacy Policy</a>
+            <a href="#" class="footer-link">B2B Security</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- MODAL FOR SPEC SPECIFICATIONS / ACTIVE SPEC CODES -->
+    <div class="modal-overlay" id="modal-overlay">
+      <div class="modal-content">
+        <button class="modal-close" id="modal-close" aria-label="Close Modal">&times;</button>
+        <h3 class="modal-title" id="modal-title">Request Specifications</h3>
+        <p style="font-size: 14px; color: var(--color-text-muted); margin-bottom: 24px; text-align: left;">
+          Enter your professional email below to immediately generate our comprehensive B2B specification matrix booklet, battery calibration curves, and custom municipal warranty parameters.
+        </p>
+        
+        <form id="modal-form">
+          <input type="hidden" id="modal-vehicle-context" value="general">
+          
+          <div class="form-group" style="margin-bottom: 16px;">
+            <label for="modal-company">Organization Name</label>
+            <input type="text" id="modal-company" class="form-control" placeholder="Transit Alliance Corp" required>
+          </div>
+
+          <div class="form-group" style="margin-bottom: 24px;">
+            <label for="modal-email">Professional Email Address</label>
+            <input type="email" id="modal-email" class="form-control" placeholder="p.alliance@transitalliance.org" required>
+          </div>
+
+          <button type="submit" class="btn btn-primary" style="width: 100%">Dispatch PDF Specs Bundle</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- BOTTOM SUCCESS NOTIFICATIONS SLIDE TOAST -->
+    <div class="toast" id="toast">
+      <div class="toast-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="24" height="24">
+          <polyline points="20 6 9 17 4 12"></polyline>
+        </svg>
+      </div>
+      <div class="toast-content">
+        <h4 id="toast-title">Secure Dispatch</h4>
+        <p id="toast-desc">Inquiry details securely logged into CRM.</p>
+      </div>
+    </div>
+
+    <script type="module" src="/src/home.js"></script>
+  </body>
+</html>
