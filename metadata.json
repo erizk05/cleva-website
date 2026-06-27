@@ -1,6 +1,0 @@
-{
-  "name": "CLEVA Commercial EV Fleet",
-  "description": "A modern, high-end B2B commercial electric vehicle fleet homepage for CLEVA featuring customized vehicle categories, a dynamic fleet savings calculator, and interactive sections for businesses and municipalities.",
-  "requestFramePermissions": [],
-  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
-}
