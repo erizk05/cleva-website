@@ -1,0 +1,126 @@
+/* Home Hero Section */
+.hero {
+  padding-top: calc(80px + var(--space-12)); /* Account for fixed navbar */
+  padding-bottom: var(--space-20);
+  background: transparent;
+  overflow: hidden;
+}
+
+.hero .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-12);
+  align-items: center;
+}
+
+.hero-content h1 {
+  font-size: var(--text-hero);
+  line-height: 1.05;
+  margin-block: var(--space-4) var(--space-6);
+}
+
+.hero-content p {
+  font-size: 1.125rem;
+  max-width: 520px;
+  margin-bottom: var(--space-8);
+}
+
+.hero-actions {
+  display: flex;
+  gap: var(--space-4);
+  flex-wrap: wrap;
+}
+
+.hero-visual {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+}
+
+.spec-block {
+  position: absolute;
+  top: 0;
+  right: 0;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.spec-block .title {
+  color: var(--clr-mono-dim);
+  font-size: var(--text-xs);
+}
+
+.spec-block .highlight {
+  color: var(--clr-mono-label);
+  font-size: var(--text-sm);
+  font-weight: 600;
+}
+
+.spec-block .desc {
+  color: var(--clr-mono-dim);
+  font-size: var(--text-xs);
+}
+
+/* Vehicle SVG container */
+.vehicle-illustration {
+  width: 100%;
+  max-width: 500px;
+}
+
+/* Home Sections */
+.features-section {
+  background-color: rgba(245, 247, 245, 0.4);
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--space-8);
+  margin-top: var(--space-12);
+}
+
+.feature-card {
+  background: var(--clr-bg);
+  padding: var(--space-8);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--clr-border);
+}
+
+.feature-icon {
+  width: 48px;
+  height: 48px;
+  background-color: var(--clr-primary-light);
+  color: var(--clr-primary);
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: var(--space-4);
+}
+
+@media (max-width: 992px) {
+  .hero .container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .hero-content p {
+    margin-inline: auto;
+  }
+  .hero-actions {
+    justify-content: center;
+  }
+  .hero-visual {
+    height: 400px;
+    margin-top: var(--space-8);
+  }
+  .spec-block {
+    top: -20px;
+    right: 50%;
+    transform: translateX(50%);
+    text-align: center;
+  }
+}
