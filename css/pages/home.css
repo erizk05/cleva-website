@@ -2,7 +2,7 @@
 .hero {
   padding-top: calc(80px + var(--space-12)); /* Account for fixed navbar */
   padding-bottom: var(--space-20);
-  background: var(--clr-bg);
+  background: transparent;
   overflow: hidden;
 }
 
@@ -73,7 +73,7 @@
 
 /* Home Sections */
 .features-section {
-  background-color: var(--clr-bg-soft);
+  background-color: rgba(245, 247, 245, 0.4);
 }
 
 .feature-grid {

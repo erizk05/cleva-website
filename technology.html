@@ -3,7 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Careers | CLEVA</title>
+  <title>Our Technology | CLEVA</title>
+  <meta name="description" content="Discover the cutting-edge technology behind CLEVA electric vehicles, including advanced battery systems, smart fleet management, and lightweight architecture.">
+  <link rel="canonical" href="https://www.cleva-ev.com/technology.html">
+  <meta property="og:title" content="Our Technology | CLEVA">
+  <meta property="og:description" content="Discover the cutting-edge technology behind CLEVA electric vehicles, including advanced battery systems, smart fleet management, and lightweight architecture.">
+  <meta property="og:url" content="https://www.cleva-ev.com/technology.html">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://www.cleva-ev.com/assets/og-image.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Our Technology | CLEVA">
+  <meta name="twitter:description" content="Discover the cutting-edge technology behind CLEVA electric vehicles, including advanced battery systems, smart fleet management, and lightweight architecture.">
+  <meta name="twitter:image" content="https://www.cleva-ev.com/assets/og-image.jpg">
+  
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;600&family=Plus+Jakarta+Sans:wght@700;800;900&family=Caveat:wght@400;700&display=swap" rel="stylesheet">
@@ -15,21 +28,59 @@
   <link rel="stylesheet" href="./css/components.css">
   <link rel="stylesheet" href="./css/navbar.css">
   <link rel="stylesheet" href="./css/footer.css">
-
-  <meta name="description" content="Join the CLEVA team and help build the future of sustainable passenger electric vehicles.">
-  <link rel="canonical" href="https://www.cleva-ev.com/careers.html">
-  <meta property="og:title" content="Careers | CLEVA">
-  <meta property="og:description" content="Join the CLEVA team and help build the future of sustainable passenger electric vehicles.">
-  <meta property="og:url" content="https://www.cleva-ev.com/careers.html">
-  <meta property="og:type" content="website">
-  <meta property="og:image" content="https://www.cleva-ev.com/assets/og-image.jpg">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Careers | CLEVA">
-  <meta name="twitter:description" content="Join the CLEVA team and help build the future of sustainable passenger electric vehicles.">
-  <meta name="twitter:image" content="https://www.cleva-ev.com/assets/og-image.jpg">
+  <link rel="stylesheet" href="./css/animations.css">
+  <style>
+    .tech-hero {
+      background-color: var(--clr-primary-900);
+      color: var(--clr-neutral-100);
+      padding: var(--space-24) var(--space-6) var(--space-12);
+      text-align: center;
+    }
+    .tech-hero h1 {
+      color: var(--clr-neutral-100);
+      margin-bottom: var(--space-4);
+    }
+    .tech-hero p {
+      max-width: 600px;
+      margin: 0 auto;
+      color: var(--clr-primary-200);
+    }
+    .tech-section {
+      padding: var(--space-16) var(--space-6);
+    }
+    .tech-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: var(--space-8);
+      max-width: var(--max-width-lg);
+      margin: 0 auto;
+    }
+    @media (min-width: 768px) {
+      .tech-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    .tech-card {
+      background-color: var(--clr-neutral-100);
+      padding: var(--space-8);
+      border-radius: var(--radius-lg);
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    }
+    .tech-card h3 {
+      margin-bottom: var(--space-3);
+      color: var(--clr-primary-800);
+    }
+    .tech-card p {
+      color: var(--clr-neutral-700);
+      line-height: 1.6;
+    }
+    .tech-icon {
+      margin-bottom: var(--space-4);
+      color: var(--clr-primary-600);
+    }
+  </style>
 </head>
 <body>
-  <!-- NAVBAR -->
   <nav class="navbar">
     <div class="container">
       <a href="./index.html" class="logo-wrapper">
@@ -46,8 +97,9 @@
           <div class="logo-slogan"></div>
         </div>
       </a>
+      
                   <div class="nav-links">
-                    <a href="./index.html" class="nav-link">Home</a>
+                    <a href="./index.html" class="nav-link active">Home</a>
                     <div class="nav-item-dropdown">
                       <a href="./vehicles.html" class="nav-link">Products</a>
                       <div class="submenu">
@@ -67,7 +119,7 @@
                         <a href="./compare.html" class="submenu-link">Compare Models</a>
                       </div>
                     </div>
-                    <a href="./careers.html" class="nav-link active">Careers</a>
+                    <a href="./careers.html" class="nav-link">Careers</a>
                     <a href="./about.html" class="nav-link">About Us</a>
                     <a href="./contact.html" class="nav-link">Contact Us</a>
                   </div>
@@ -79,33 +131,54 @@
     </div>
   </nav>
 
-  <main style="padding-top: 120px; padding-bottom: 80px; text-align: center;">
-    <div class="container" style="max-width: 800px; margin: 0 auto;">
-      <h1 class="font-display" style="margin-bottom: var(--space-6);">Careers</h1>
-      <div style="color: var(--clr-muted); line-height: 1.6; display: flex; flex-direction: column; gap: 1rem; align-items: center;">
-        <p><strong>Last Updated: June 25, 2026</strong></p>
-        <p>At Clean Vehicle Solutions Limited ("CLEVA", "we", "us", or "our"), your privacy is important to us. Join our team to help build a cleaner, greener future. We are currently looking for passionate individuals to join us.</p>
-        
-        <h3>Open Positions</h3>
-        <p>No open positions at the moment. Please check back later.</p>
-        
-        <h3 class="font-display" style="color: var(--clr-text); margin-top: 1rem;">2. How We Use Your Information</h3>
-        <p>We use the information we collect to respond to your inquiries, provide support, send updates regarding our vehicles and solutions, and improve our website and customer service.</p>
-        
-        <h3 class="font-display" style="color: var(--clr-text); margin-top: 1rem;">3. Data Sharing and Protection</h3>
-        <p>We do not sell, trade, or rent your personal information to third parties. We take appropriate security measures to protect against unauthorized access, alteration, disclosure, or destruction of your personal data.</p>
-        
-        <h3 class="font-display" style="color: var(--clr-text); margin-top: 1rem;">4. Your Rights</h3>
-        <p>You have the right to access, update, or request the deletion of your personal information at any time. To exercise these rights, please contact us.</p>
-        
-        <h3 class="font-display" style="color: var(--clr-text); margin-top: 1rem;">5. Changes to This Policy</h3>
-        <p>We may update this Privacy Policy from time to time. Any changes will be posted on this page with an updated "Last Updated" date.</p>
+  <main>
+    <section class="tech-hero">
+      <div class="container">
+        <h1>Engineering the Future of Mobility</h1>
+        <p>At CLEVA, we leverage cutting-edge technology to create electric vehicles that are efficient, reliable, and sustainable.</p>
       </div>
-    </div>
+    </section>
+
+    <section class="tech-section">
+      <div class="container">
+        <div class="tech-grid">
+          <div class="tech-card">
+            <div class="tech-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="2" width="8" height="20" rx="2" ry="2"/><line x1="12" y1="6" x2="12" y2="6"/><line x1="12" y1="18" x2="12" y2="18"/></svg>
+            </div>
+            <h3>Advanced Battery Systems</h3>
+            <p>Our vehicles utilize state-of-the-art Lithium Iron Phosphate (LiFePO4) batteries, offering superior safety, extended lifespans, and reliable performance across diverse climates.</p>
+          </div>
+          
+          <div class="tech-card">
+            <div class="tech-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <h3>Smart Fleet Telematics</h3>
+            <p>Integrated IoT sensors provide real-time data on vehicle health, location, and driver behavior, empowering fleet operators with actionable insights to optimize efficiency.</p>
+          </div>
+          
+          <div class="tech-card">
+            <div class="tech-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+            </div>
+            <h3>Lightweight Architecture</h3>
+            <p>By employing advanced aerospace-grade materials, we minimize vehicle weight without compromising structural integrity, leading to extended range and lower energy consumption.</p>
+          </div>
+          
+          <div class="tech-card">
+            <div class="tech-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+            </div>
+            <h3>Regenerative Braking</h3>
+            <p>Our intelligent braking system captures kinetic energy typically lost during deceleration and feeds it back into the battery, maximizing efficiency in stop-and-go transit routes.</p>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 
-  <!-- FOOTER -->
-    <footer class="footer">
+  <footer class="footer">
     <div class="container">
       <div class="footer-top">
         <div class="footer-col">
