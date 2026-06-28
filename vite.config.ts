@@ -5,6 +5,7 @@ import {defineConfig} from 'vite';
 
 export default defineConfig(() => {
   return {
+    base: './',
     plugins: [react(), tailwindcss()],
     resolve: {
       alias: {
@@ -19,6 +20,13 @@ export default defineConfig(() => {
           solutions: path.resolve(__dirname, 'solutions.html'),
           about: path.resolve(__dirname, 'about.html'),
           contact: path.resolve(__dirname, 'contact.html'),
+          careers: path.resolve(__dirname, 'careers.html'),
+          compare: path.resolve(__dirname, 'compare.html'),
+          privacy: path.resolve(__dirname, 'privacy.html'),
+          sustainability: path.resolve(__dirname, 'sustainability.html'),
+          technology: path.resolve(__dirname, 'technology.html'),
+          terms: path.resolve(__dirname, 'terms.html'),
+          vehicle: path.resolve(__dirname, 'vehicle.html'),
         },
       },
     },
