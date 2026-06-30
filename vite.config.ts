@@ -20,7 +20,7 @@ export default defineConfig(() => {
           solutions: path.resolve(__dirname, 'solutions.html'),
           about: path.resolve(__dirname, 'about.html'),
           contact: path.resolve(__dirname, 'contact.html'),
-          careers: path.resolve(__dirname, 'careers.html'),
+          //careers: path.resolve(__dirname, 'careers.html'),
           compare: path.resolve(__dirname, 'compare.html'),
           privacy: path.resolve(__dirname, 'privacy.html'),
           sustainability: path.resolve(__dirname, 'sustainability.html'),
