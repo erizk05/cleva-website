@@ -1,6 +1,0 @@
-{
-  "name": "CLEVA EV Website",
-  "description": "The official multi-page website for CLEVA, a next-generation passenger electric vehicle brand.",
-  "requestFramePermissions": [],
-  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
-}
