@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog & Events | CLEVA</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;600&family=Plus+Jakarta+Sans:wght@700;800;900&family=Caveat:wght@400;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="./css/variables.css">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/typography.css">
+  <link rel="stylesheet" href="./css/layout.css">
+  <link rel="stylesheet" href="./css/components.css">
+  <link rel="stylesheet" href="./css/navbar.css">
+  <link rel="stylesheet" href="./css/footer.css">
+
+  <meta name="description" content="Learn more about CLEVA, our mission to revolutionize passenger EVs, and our commitment to sustainable transportation.">
+  <link rel="canonical" href="https://www.cleva-ev.com/about.html">
+  <meta property="og:title" content="About Us | CLEVA">
+  <meta property="og:description" content="Learn more about CLEVA, our mission to revolutionize passenger EVs, and our commitment to sustainable transportation.">
+  <meta property="og:url" content="https://www.cleva-ev.com/about.html">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://www.cleva-ev.com/assets/og-image.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="About Us | CLEVA">
+  <meta name="twitter:description" content="Learn more about CLEVA, our mission to revolutionize passenger EVs, and our commitment to sustainable transportation.">
+  <meta name="twitter:image" content="https://www.cleva-ev.com/assets/og-image.jpg">
+</head>
+<body>
+  <!-- NAVBAR -->
+  
+<!-- START: nav navbar -->
+<nav class="navbar">
+    <div class="container">
+      <a href="./index.html" class="logo-wrapper">
+        <div class="logo-mark">
+          <svg viewBox="0 0 100 100" class="logo-svg" fill="none" stroke-linecap="round" stroke-width="8">
+            <path d="M 12 55 A 40 40 0 0 1 55 12" stroke="#000000" />
+            <path d="M 45 12 A 40 40 0 0 1 88 55" stroke="#68D359" />
+            <path d="M 88 45 A 40 40 0 0 1 45 88" stroke="#D4F0B7" />
+            <path d="M 55 88 A 40 40 0 0 1 12 45" stroke="#B0B0B0" />
+            <text x="50" y="55" font-family="sans-serif" font-weight="900" font-size="16" fill="var(--clr-text)" text-anchor="middle" stroke="none">CLEVA</text>
+          </svg>
+        </div>
+        <div class="logo-text-group">
+          
+          <div class="logo-title">CLEVA</div>
+          <div class="logo-slogan"></div>
+        </div>
+      </a>
+                  <div class="nav-links">
+                    <a href="./index.html" class="nav-link">Home</a>
+                    <div class="nav-item-dropdown">
+                      <a href="./vehicles.html" class="nav-link">Products</a>
+                      <div class="submenu">
+                        <a href="./vehicle.html?id=etrike" class="submenu-link">eTRIKE</a>
+                        <a href="./vehicle.html?id=eshuttle" class="submenu-link">eSHUTTLE</a>
+                        <a href="./vehicle.html?id=bevdeluxe" class="submenu-link">BEV Deluxe</a>
+                        <a href="./vehicle.html?id=emover" class="submenu-link">eMOVER</a>
+                        <a href="./vehicle.html?id=elinebus" class="submenu-link">eLine Bus</a>
+                        <a href="./vehicle.html?id=eridecargo" class="submenu-link">eRIDE Cargo+</a>
+                      </div>
+                    </div>
+                    <a href="./technology.html" class="nav-link">Technology</a>
+                              <div class="nav-item-dropdown">
+                      <a href="#" class="nav-link">Tools</a>
+                      <div class="submenu">
+                        <a href="./solutions.html" class="submenu-link">Savings Calculator</a>
+                        <a href="./compare.html" class="submenu-link">Compare Models</a>
+                      </div>
+                    </div>
+                    <a href="./about.html" class="nav-link">About Us</a>
+                    <a href="./contact.html" class="nav-link">Contact Us</a>
+                    <a href="./blog.html" class="nav-link active">Blog</a>
+                  </div>
+      <div class="nav-actions">
+        <button class="search-btn" aria-label="Search" style="background: none; border: none; cursor: pointer; color: var(--clr-text); display: flex; align-items: center; justify-content: center; width: 40px; height: 40px;">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+        </button>
+        <button class="hamburger" aria-label="Toggle Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+                                        <div id="inlineSearchContainer" style="display: none; width: 100%; padding: 1.5rem 0; border-top: 1px solid var(--clr-border);">
+      <div class="container" style="display: flex; flex-direction: column; align-items: center; position: relative;">
+        <form id="inlineSearchForm" style="display: flex; gap: 0.75rem; margin-bottom: 0; width: 100%; max-width: 800px; justify-content: center;">
+          <input type="text" id="inlineSearchInput" placeholder="Search the website..." style="flex: 1; padding: 0.6rem 1.5rem; font-size: 1rem; border: 1px solid rgba(13, 31, 26, 0.15); border-radius: 10px; background: rgba(255, 255, 255, 0.9); color: var(--clr-text); outline: none; transition: all 0.3s ease;" required>
+          <button type="submit" class="btn btn-primary" style="padding: 0.6rem 1.5rem; border-radius: 10px; font-size: 1rem;">Search</button>
+        </form>
+        <div id="inlineSearchResults" style="position: absolute; top: 100%; left: 0; right: 0; margin: 0 auto; width: 100%; max-width: 800px; display: flex; flex-direction: column; gap: 0.5rem; max-height: 60vh; overflow-y: auto; background: white; border-radius: var(--radius-md); box-shadow: var(--shadow-lg); z-index: 1000; opacity: 0; visibility: hidden; border: 1px solid transparent; padding: 0; transition: all 0.3s ease;"></div>
+      </div>
+    </div>
+  </nav>
+<!-- END: nav navbar -->
+
+
+  
+<!-- START: main -->
+<main style="padding-top: 80px;">
+    
+<!-- START: section hero -->
+<section class="hero">
+      <div class="container" style="padding-block: var(--space-16); text-align: center;">
+        <div class="badge fade-in-up" style="margin-bottom: var(--space-4);">NEWS & EVENTS</div>
+        <h1 class="fade-in-up stagger-1" style="margin-bottom: var(--space-6);">CLEVA Blog & Events</h1>
+        <p class="fade-in-up stagger-2 text-lg text-muted" style="max-width: 700px; margin: 0 auto;">Stay up to date with the latest news, product announcements, and upcoming events from Clean Vehicle Solutions Limited.</p>
+      </div>
+    </section>
+<!-- END: section hero -->
+
+
+    
+<!-- START: section section -->
+<section class="section" style="background: var(--clr-surface); padding-block: var(--space-16);">
+      <div class="container">
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+          
+          <!-- Event 1 -->
+          <div class="fade-in-up stagger-1" style="background: var(--clr-bg); border-radius: var(--radius-lg); overflow: hidden; border: 1px solid var(--clr-border);">
+            <img src="https://images.unsplash.com/photo-1593941707882-a5bba14938c7?q=80&w=1000&auto=format&fit=crop" alt="EV Expo" style="width: 100%; height: 200px; object-fit: cover;">
+            <div style="padding: 1.5rem;">
+              <div class="badge" style="margin-bottom: 1rem;">EVENT</div>
+              <h3 style="margin-bottom: 0.5rem;">Global EV Expo 2026</h3>
+              <p class="text-sm text-muted" style="margin-bottom: 1rem;">Join us in Tokyo where we will unveil our new BEV Deluxe passenger pod. We look forward to meeting transit authority leaders.</p>
+              <a href="#" class="btn btn-primary" style="padding: 0.5rem 1rem; text-decoration: none;">Read More</a>
+            </div>
+          </div>
+
+          <!-- News 1 -->
+          <div class="fade-in-up stagger-2" style="background: var(--clr-bg); border-radius: var(--radius-lg); overflow: hidden; border: 1px solid var(--clr-border);">
+            <img src="https://images.unsplash.com/photo-1519003722824-194d4455a60c?q=80&w=1000&auto=format&fit=crop" alt="Resort Partnership" style="width: 100%; height: 200px; object-fit: cover;">
+            <div style="padding: 1.5rem;">
+              <div class="badge" style="margin-bottom: 1rem;">NEWS</div>
+              <h3 style="margin-bottom: 0.5rem;">New Resort Partnership</h3>
+              <p class="text-sm text-muted" style="margin-bottom: 1rem;">CLEVA is proud to announce a new partnership with Sunscape Resorts to provide a fleet of 50 eSHUTTLEs for guest transport.</p>
+              <a href="#" class="btn btn-primary" style="padding: 0.5rem 1rem; text-decoration: none;">Read More</a>
+            </div>
+          </div>
+
+          <!-- Event 2 -->
+          <div class="fade-in-up stagger-3" style="background: var(--clr-bg); border-radius: var(--radius-lg); overflow: hidden; border: 1px solid var(--clr-border);">
+            <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1000&auto=format&fit=crop" alt="Sustainability Summit" style="width: 100%; height: 200px; object-fit: cover;">
+            <div style="padding: 1.5rem;">
+              <div class="badge" style="margin-bottom: 1rem;">EVENT</div>
+              <h3 style="margin-bottom: 0.5rem;">Sustainability Summit</h3>
+              <p class="text-sm text-muted" style="margin-bottom: 1rem;">Our CEO will be delivering the keynote address at the International Sustainability Summit in London this October.</p>
+              <a href="#" class="btn btn-primary" style="padding: 0.5rem 1rem; text-decoration: none;">Read More</a>
+            </div>
+          </div>
+
+          <!-- News 2 -->
+          <div class="fade-in-up stagger-4" style="background: var(--clr-bg); border-radius: var(--radius-lg); overflow: hidden; border: 1px solid var(--clr-border);">
+            <img src="https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?q=80&w=1000&auto=format&fit=crop" alt="Battery Tech" style="width: 100%; height: 200px; object-fit: cover;">
+            <div style="padding: 1.5rem;">
+              <div class="badge" style="margin-bottom: 1rem;">NEWS</div>
+              <h3 style="margin-bottom: 0.5rem;">Next-Gen Battery Tech</h3>
+              <p class="text-sm text-muted" style="margin-bottom: 1rem;">We have successfully tested our new solid-state battery platform, extending the range of the eLine Bus by 30%.</p>
+              <a href="#" class="btn btn-primary" style="padding: 0.5rem 1rem; text-decoration: none;">Read More</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+<!-- END: section section -->
+
+  </main>
+<!-- END: main -->
+
+
+  <!-- FOOTER -->
+    
+<!-- START: footer footer -->
+<footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-col">
+          <a href="./index.html" class="footer-logo">
+            <div class="logo-mark">
+              <svg viewBox="0 0 100 100" class="logo-svg" fill="none" stroke-linecap="round" stroke-width="8">
+                <path d="M 12 55 A 40 40 0 0 1 55 12" stroke="#ffffff" />
+                <path d="M 45 12 A 40 40 0 0 1 88 55" stroke="#68D359" />
+                <path d="M 88 45 A 40 40 0 0 1 45 88" stroke="#D4F0B7" />
+                <path d="M 55 88 A 40 40 0 0 1 12 45" stroke="#B0B0B0" />
+                <text x="50" y="55" font-family="sans-serif" font-weight="900" font-size="16" fill="var(--clr-inverse)" text-anchor="middle" stroke="none">CLEVA</text>
+              </svg>
+            </div>
+            <div class="logo-text-group">
+              
+              <div class="footer-logo-title">CLEVA</div>
+              <div class="footer-logo-slogan"></div>
+            </div>
+          </a>
+          <p class="text-sm text-muted" style="margin-top: 1rem;">The Next-Generation Passenger EV Standard. Move People. Move Forward.</p>
+          <address class="text-sm text-muted" style="margin-top: 1.5rem; font-style: normal; line-height: 1.6;">
+            <strong>Headquarters</strong><br>
+            805-6 Prosperity Millennia Plaza<br>
+            663 King’s Road, North Point,<br>
+            Hong Kong, Sar China
+          </address>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+            </a>
+            <a href="#" aria-label="YouTube">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33 2.78 2.78 0 0 0 1.94 2c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.33 29 29 0 0 0-.46-5.33z"></path><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon></svg>
+            </a>
+            <a href="#" aria-label="Twitter">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path></svg>
+            </a>
+            <a href="#" aria-label="Instagram">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+            </a>
+            <a href="#" aria-label="LinkedIn">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Vehicles</h4>
+          <ul>
+            <li><a href="./vehicles.html#etrike">eTRIKE</a></li>
+            <li><a href="./vehicles.html#eshuttle">eSHUTTLE</a></li>
+            <li><a href="./vehicles.html#bevdeluxe">BEV Deluxe</a></li>
+            <li><a href="./vehicles.html#elinebus">eLine Bus</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Solutions</h4>
+          <ul>
+            <li><a href="./solutions.html">Transit Authorities</a></li>
+            <li><a href="./solutions.html">Resorts & Campuses</a></li>
+            <li><a href="./solutions.html">Fleet Management</a></li>
+            <li><a href="./solutions.html">Savings Calculator</a></li>
+            <li><a href="./compare.html">Compare Models</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="./about.html">About Us</a></li>
+            <li><a href="./technology.html">Technology</a></li>
+            <li><a href="./contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Newsletter</h4>
+          <p class="text-sm text-muted" style="margin-bottom: 1rem;">Subscribe to receive updates on our latest vehicles and solutions.</p>
+          <form style="display: flex; flex-direction: column; gap: 0.5rem;" onsubmit="event.preventDefault(); alert('Thank you for subscribing!');">
+            <input type="email" placeholder="Your email address" required style="padding: 0.5rem; border: 1px solid rgba(255, 255, 255, 0.2); border-radius: var(--radius-md); background: rgba(255,255,255,0.1); color: var(--clr-inverse);">
+            <button type="submit" class="btn btn-primary" style="padding: 0.5rem; width: 100%; border: none;">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2022 Clean Vehicle Solutions Limited. All rights reserved.</p>
+        <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+          <a href="./privacy.html">Privacy Policy</a>
+          <a href="./terms.html">Terms of Service</a>
+          <a href="./sustainability.html">Sustainability Policies</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+<!-- END: footer footer -->
+
+
+  
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const searchBtns = document.querySelectorAll('.search-btn');
+      const inlineSearchContainer = document.getElementById('inlineSearchContainer');
+      const inlineSearchForm = document.getElementById('inlineSearchForm');
+      const inlineSearchInput = document.getElementById('inlineSearchInput');
+      const inlineSearchResults = document.getElementById('inlineSearchResults');
+      
+      const pages = [
+        { title: 'Home', url: './index.html', desc: 'The Next-Generation Passenger EV Standard' },
+        { title: 'Products / Vehicles', url: './vehicles.html', desc: 'Browse our electric vehicle models' },
+        { title: 'eTRIKE', url: './vehicle.html?id=etrike', desc: 'Urban delivery and transport' },
+        { title: 'eSHUTTLE', url: './vehicle.html?id=eshuttle', desc: 'Resort and campus mobility' },
+        { title: 'BEV Deluxe', url: './vehicle.html?id=bevdeluxe', desc: 'Premium passenger transit' },
+        { title: 'eLine Bus', url: './vehicle.html?id=elinebus', desc: 'Mass transit solutions' },
+        { title: 'Technology', url: './technology.html', desc: 'Our advanced EV platforms and battery tech' },
+        { title: 'Savings Calculator', url: './solutions.html', desc: 'Calculate your fleet savings' },
+        { title: 'Compare Models', url: './compare.html', desc: 'Compare CLEVA electric vehicles side-by-side' },
+        { title: 'About Us', url: './about.html', desc: 'Our mission and history' },
+        { title: 'Contact Us', url: './contact.html', desc: 'Get in touch with our sales team' },
+        { title: 'Blog & Events', url: './blog.html', desc: 'Latest news, events, and updates from CLEVA' },
+        { title: 'Sustainability', url: './sustainability.html', desc: 'Our environmental commitments' },
+        { title: 'Privacy Policy', url: './privacy.html', desc: 'Our privacy commitments' },
+        { title: 'Terms of Service', url: './terms.html', desc: 'Terms of use' }
+      ];
+
+      searchBtns.forEach(btn => {
+        btn.addEventListener('click', (e) => {
+          e.preventDefault();
+          if (!inlineSearchContainer) return;
+          if (inlineSearchContainer.style.display === 'none') {
+            inlineSearchContainer.style.display = 'block';
+            setTimeout(() => inlineSearchInput.focus(), 100);
+          } else {
+            inlineSearchContainer.style.display = 'none';
+            inlineSearchResults.style.opacity = '0';
+            inlineSearchResults.style.visibility = 'hidden';
+            inlineSearchResults.style.marginTop = '0';
+            inlineSearchResults.style.padding = '0';
+            inlineSearchResults.style.borderColor = 'transparent';
+            inlineSearchInput.value = '';
+          }
+        });
+      });
+
+      const handleSearch = () => {
+        const query = inlineSearchInput.value.toLowerCase();
+        inlineSearchResults.innerHTML = '';
+        
+        if (!query.trim()) {
+            inlineSearchResults.style.opacity = '0';
+            inlineSearchResults.style.visibility = 'hidden';
+            inlineSearchResults.style.marginTop = '0';
+            inlineSearchResults.style.padding = '0';
+            inlineSearchResults.style.borderColor = 'transparent';
+            return;
+        }
+
+        inlineSearchResults.style.marginTop = '1rem';
+        inlineSearchResults.style.opacity = '1';
+        inlineSearchResults.style.visibility = 'visible';
+        inlineSearchResults.style.padding = '1rem';
+        inlineSearchResults.style.borderColor = 'var(--clr-border)';
+        
+        const results = pages.filter(p => p.title.toLowerCase().includes(query) || p.desc.toLowerCase().includes(query));
+        
+        if (results.length > 0) {
+          results.forEach(res => {
+            const el = document.createElement('a');
+            el.href = res.url;
+            el.style.display = 'block';
+            el.style.padding = '1rem';
+            el.style.border = '1px solid var(--clr-border)';
+            el.style.borderRadius = 'var(--radius-md)';
+            el.style.textDecoration = 'none';
+            el.style.color = 'var(--clr-text)';
+            el.style.background = 'rgba(255, 255, 255, 0.5)';
+            el.innerHTML = '<h3 style="margin-bottom: 0.25rem; color: var(--clr-primary); font-size: 1.1rem;">' + res.title + '</h3><p style="color: var(--clr-muted); font-size: 0.9rem; margin-bottom: 0;">' + res.desc + '</p>';
+            
+            el.addEventListener('mouseover', () => {
+              el.style.borderColor = 'var(--clr-primary)';
+              el.style.background = 'rgba(255, 255, 255, 0.9)';
+            });
+            el.addEventListener('mouseout', () => {
+              el.style.borderColor = 'var(--clr-border)';
+              el.style.background = 'rgba(255, 255, 255, 0.5)';
+            });
+
+            inlineSearchResults.appendChild(el);
+          });
+        } else {
+          inlineSearchResults.innerHTML = '<p style="color: var(--clr-muted); margin: 0;">No results found.</p>';
+        }
+      };
+
+      if (inlineSearchForm) inlineSearchForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        handleSearch();
+      });
+      
+      if (inlineSearchInput) inlineSearchInput.addEventListener('input', () => {
+        handleSearch();
+      });
+    });
+  </script>
+<script type="module" src="./js/main.js"></script>
+</body>
+</html>
