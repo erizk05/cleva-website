@@ -1,0 +1,126 @@
+/* START FILE: footer.css */
+.footer {
+  background-color: var(--clr-bg-dark);
+  color: var(--clr-inverse);
+  padding-block: var(--space-16) var(--space-8);
+}
+
+.footer-top {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: var(--space-8);
+  margin-bottom: var(--space-12);
+}
+
+.footer-col {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 150px;
+}
+
+.footer-col:first-child {
+  flex: 2 1 300px;
+}
+
+.footer-logo {
+  margin-bottom: var(--space-4);
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-3);
+  text-decoration: none;
+}
+
+.footer-logo-title {
+  font-family: var(--font-display);
+  font-weight: 900;
+  font-size: var(--text-2xl);
+  color: var(--clr-inverse);
+  line-height: 1;
+  letter-spacing: -0.02em;
+}
+
+.footer-logo-slogan {
+  font-family: 'Caveat', cursive;
+  font-size: 16px;
+  color: var(--clr-accent);
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  margin-top: -2px;
+}
+
+.footer-logo-slogan::before {
+  content: "Cleaner Air for a Healthier Future";
+}
+
+.footer-logo:hover .footer-logo-slogan::before {
+  content: "Clean Vehicle Solutions Limited";
+}
+
+.footer-logo:hover .logo-svg {
+  transform: rotate(360deg);
+}
+
+.footer-col h4 {
+  color: var(--clr-muted);
+  font-size: var(--text-sm);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: var(--space-4);
+}
+
+.footer-col ul {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-col a {
+  color: var(--clr-inverse);
+  opacity: 0.8;
+  font-size: var(--text-sm);
+  transition: opacity var(--duration-fast);
+}
+
+.footer-col a:hover {
+  opacity: 1;
+  color: var(--clr-primary);
+}
+
+.social-links {
+  display: flex;
+  gap: var(--space-4);
+  margin-top: var(--space-6);
+}
+
+.social-links a {
+  color: var(--clr-muted);
+  transition: color var(--duration-fast);
+  display: inline-flex;
+}
+
+.social-links a:hover {
+  color: var(--clr-primary);
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: var(--space-8);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  font-size: var(--text-xs);
+  color: var(--clr-muted);
+}
+
+@media (max-width: 768px) {
+  .footer-bottom {
+    flex-direction: column;
+    gap: var(--space-4);
+    text-align: center;
+  }
+}
+/* END FILE: footer.css */

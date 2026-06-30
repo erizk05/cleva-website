@@ -1,0 +1,111 @@
+/* START FILE: variables.css */
+:root {
+
+/* START: Core */
+
+  --clr-bg:           #FFFFFF;     /* page background — pure white */
+  --clr-bg-soft:      #F5F7F5;     /* soft off-white section backgrounds */
+  --clr-bg-dark:      #0D1F1A;     /* dark navy-green footer / dark sections */
+  --clr-surface:      #F0F4F1;     /* card backgrounds */
+  --clr-border:       #E2E8E4;     /* subtle borders and dividers */
+
+/* END: Core */
+
+/* START: Brand */
+
+  --clr-primary:      #2D8B4E;     /* main green — buttons, active states */
+  --clr-primary-dark: #1F6B3A;     /* hover green — darker on interaction */
+  --clr-primary-light:#E8F5EC;     /* green tint — badge backgrounds, chips */
+  --clr-accent:       #4CAF72;     /* lighter green — highlights, icons */
+  --clr-badge-green:  #3DAA5C;     /* badge/pill green */
+
+/* END: Brand */
+
+/* START: Text */
+
+  --clr-text:         #0D1F1A;     /* primary text — very dark navy green */
+  --clr-text-2:       #3D5247;     /* secondary text */
+  --clr-muted:        #7A9488;     /* muted/placeholder text */
+  --clr-inverse:      #FFFFFF;     /* text on dark backgrounds */
+
+/* END: Text */
+
+/* START: Semantic */
+
+  --clr-success:      #22C55E;
+  --clr-danger:       #EF4444;
+  --clr-warning:      #F59E0B;
+
+/* END: Semantic */
+
+/* START: Mono label color */
+
+  --clr-mono-label:   #2D8B4E;     
+  --clr-mono-dim:     #9BB5AA;     
+
+/* END: Mono label color */
+
+/* START: Typography */
+
+  --font-display: 'Plus Jakarta Sans', sans-serif;
+  --font-body:    'Inter', sans-serif;
+  --font-mono:    'JetBrains Mono', monospace;
+
+/* END: Typography */
+
+/* START: Type scale */
+
+  --text-xs:   0.75rem;
+  --text-sm:   0.875rem;
+  --text-base: 1rem;
+  --text-lg:   1.125rem;
+  --text-xl:   1.25rem;
+  --text-2xl:  1.5rem;
+  --text-3xl:  1.875rem;
+  --text-4xl:  2.25rem;
+  --text-hero: clamp(2.4rem, 5.5vw, 4rem);
+
+/* END: Type scale */
+
+/* START: Spacing */
+
+  --space-1:  0.25rem;  --space-2:  0.5rem;
+  --space-3:  0.75rem;  --space-4:  1rem;
+  --space-5:  1.25rem;  --space-6:  1.5rem;
+  --space-8:  2rem;     --space-10: 2.5rem;
+  --space-12: 3rem;     --space-16: 4rem;
+  --space-20: 5rem;     --space-24: 6rem;
+
+/* END: Spacing */
+
+/* START: Layout */
+
+  --nav-height: 80px;
+  --container-max: 1200px;
+  --container-pad: var(--space-6);
+  --radius-sm:  6px;
+  --radius-md:  12px;
+  --radius-lg:  20px;
+  --radius-pill:999px;
+
+/* END: Layout */
+
+/* START: Shadows */
+
+  --shadow-sm:   0 1px 4px rgba(13,31,26,0.08);
+  --shadow-md:   0 4px 16px rgba(13,31,26,0.10);
+  --shadow-lg:   0 8px 32px rgba(13,31,26,0.12);
+  --shadow-card: 0 2px 12px rgba(13,31,26,0.08);
+
+/* END: Shadows */
+
+/* START: Transitions */
+
+  --ease-out:      cubic-bezier(0.16, 1, 0.3, 1);
+  --duration-fast: 150ms;
+  --duration-base: 260ms;
+  --duration-slow: 480ms;
+}
+
+/* END: Transitions */
+/* END FILE: variables.css */
