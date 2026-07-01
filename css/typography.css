@@ -1,0 +1,31 @@
+/* START FILE: typography.css */
+body {
+  font-family: var(--font-body);
+  font-size: var(--text-base);
+}
+h1, h2, h3, h4, h5, h6, .font-display {
+  font-family: var(--font-display);
+  font-weight: 800;
+  line-height: 1.1;
+  color: var(--clr-text);
+  letter-spacing: -0.02em;
+}
+h1 { font-size: var(--text-4xl); }
+h2 { font-size: var(--text-3xl); }
+h3 { font-size: var(--text-2xl); }
+h4 { font-size: var(--text-xl); }
+h5 { font-size: var(--text-lg); }
+h6 { font-size: var(--text-base); }
+
+p {
+  color: var(--clr-text-2);
+}
+
+.mono, .spec-label {
+  font-family: var(--font-mono);
+}
+
+.text-sm { font-size: var(--text-sm); }
+.text-xs { font-size: var(--text-xs); }
+.text-muted { color: var(--clr-muted); }
+/* END FILE: typography.css */
