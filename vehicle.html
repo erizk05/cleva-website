@@ -1,0 +1,304 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vehicle Details | CLEVA</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;600&family=Plus+Jakarta+Sans:wght@700;800;900&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/variables.css" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/typography.css" />
+    <link rel="stylesheet" href="./css/layout.css" />
+    <link rel="stylesheet" href="./css/components.css" />
+    <link rel="stylesheet" href="./css/navbar.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+    <link rel="stylesheet" href="./css/animations.css" />
+    <link rel="stylesheet" href="./css/pages/vehicles.css" />
+  
+  <meta name="description" content="Explore detailed specifications and features of CLEVA's electric vehicles.">
+  <link rel="canonical" href="https://www.cleva-ev.com/vehicle.html">
+  <meta property="og:title" content="Vehicle Details | CLEVA">
+  <meta property="og:description" content="Explore detailed specifications and features of CLEVA's electric vehicles.">
+  <meta property="og:url" content="https://www.cleva-ev.com/vehicle.html">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://www.cleva-ev.com/assets/og-image.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Vehicle Details | CLEVA">
+  <meta name="twitter:description" content="Explore detailed specifications and features of CLEVA's electric vehicles.">
+  <meta name="twitter:image" content="https://www.cleva-ev.com/assets/og-image.jpg">
+</head>
+  <body>
+    <!-- NAVBAR -->
+    
+<!-- START: nav navbar -->
+<nav class="navbar">
+      <div class="container">
+        <a href="./index.html" class="logo-wrapper">
+          <div class="logo-mark">
+            <img src="./assets/logo.png" class="logo-svg" alt="CLEVA Logo">
+          </div>
+          <div class="logo-text-group">
+            
+            <div class="logo-title">CLEVA</div>
+          <div class="logo-slogan"></div>
+          </div>
+        </a>
+        <div class="nav-links">
+          <a href="./index.html" class="nav-link">Home</a>
+          <div class="nav-item-dropdown">
+            <a href="./vehicles.html" class="nav-link active">Products</a>
+            <div class="submenu">
+              <a href="./vehicle.html?id=etrike" class="submenu-link">eTRIKE</a>
+              <a href="./vehicle.html?id=eshuttle" class="submenu-link"
+                >eSHUTTLE</a
+              >
+              <a href="./vehicle.html?id=bevdeluxe" class="submenu-link"
+                >BEV Deluxe</a
+              >
+              <a href="./vehicle.html?id=emover" class="submenu-link">eMOVER</a>
+              <a href="./vehicle.html?id=elinebus" class="submenu-link"
+                >eLine Bus</a
+              >
+              <a href="./vehicle.html?id=eridecargo" class="submenu-link"
+                >eRIDE Cargo+</a
+              >
+            </div>
+          </div>
+          <a href="./technology.html" class="nav-link">Technology</a>
+                              <div class="nav-item-dropdown">
+                      <a href="#" class="nav-link">Tools</a>
+                      <div class="submenu">
+                        <a href="./solutions.html" class="submenu-link">Savings Calculator</a>
+                        <a href="./compare.html" class="submenu-link">Compare Models</a>
+                      </div>
+                    </div>
+          <a href="./about.html" class="nav-link">About Us</a>
+          <a href="./contact.html" class="nav-link">Contact Us</a>
+                    <a href="./blog.html" class="nav-link">Blog</a>
+        </div>
+        <div class="nav-actions">
+          <button class="search-btn" aria-label="Search" style="background: none; border: none; cursor: pointer; color: var(--clr-text); display: flex; align-items: center; justify-content: center; width: 40px; height: 40px;">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+        </button>
+        <button class="hamburger" aria-label="Toggle Menu">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+                                        <div id="inlineSearchContainer" style="display: none; width: 100%; padding: 1.5rem 0; border-top: 1px solid var(--clr-border);">
+      <div class="container" style="display: flex; flex-direction: column; align-items: center; position: relative;">
+        <form id="inlineSearchForm" style="display: flex; gap: 0.75rem; margin-bottom: 0; width: 100%; max-width: 800px; justify-content: center;">
+          <input type="text" id="inlineSearchInput" placeholder="Search the website..." style="flex: 1; padding: 0.6rem 1.5rem; font-size: 1rem; border: 1px solid rgba(13, 31, 26, 0.15); border-radius: 10px; background: rgba(255, 255, 255, 0.9); color: var(--clr-text); outline: none; transition: all 0.3s ease;" required>
+          <button type="submit" class="btn btn-primary" style="padding: 0.6rem 1.5rem; border-radius: 10px; font-size: 1rem;">Search</button>
+        </form>
+        <div id="inlineSearchResults" style="position: absolute; top: 100%; left: 0; right: 0; margin: 0 auto; width: 100%; max-width: 800px; display: flex; flex-direction: column; gap: 0.5rem; max-height: 60vh; overflow-y: auto; background: white; border-radius: var(--radius-md); box-shadow: var(--shadow-lg); z-index: 1000; opacity: 0; visibility: hidden; border: 1px solid transparent; padding: 0; transition: all 0.3s ease;"></div>
+      </div>
+    </div>
+  </nav>
+<!-- END: nav navbar -->
+
+
+    
+<!-- START: main -->
+<main>
+      
+<!-- START: section container -->
+<section
+        class="container"
+        style="
+          padding-bottom: var(--space-20);
+          padding-top: calc(80px + var(--space-8));
+        "
+      >
+        <a
+          href="./vehicles.html"
+          class="btn btn-secondary"
+          style="
+            margin-bottom: var(--space-6);
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+          "
+        >
+          <svg
+            width="20"
+            height="20"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <line x1="19" y1="12" x2="5" y2="12"></line>
+            <polyline points="12 19 5 12 12 5"></polyline>
+          </svg>
+          Back to Products
+        </a>
+        <div id="vehicle-details-container">
+          <!-- Injected via vehicle.js -->
+          <p>Loading vehicle details...</p>
+        </div>
+      </section>
+<!-- END: section container -->
+
+    </main>
+<!-- END: main -->
+
+
+    
+<!-- START: footer footer -->
+<footer class="footer">
+      <!-- Same footer as before -->
+      <div class="container">
+        <div class="footer-top">
+          <div class="footer-col">
+            <a href="./index.html" class="footer-logo">
+              <div class="logo-mark">
+                <img src="./assets/logo.png" class="logo-svg" alt="CLEVA Logo">
+              </div>
+              <div class="logo-text-group">
+                
+                <div class="footer-logo-title">CLEVA</div>
+              <div class="footer-logo-slogan"></div>
+              </div>
+            </a>
+            <p class="text-sm text-muted" style="margin-top: 1rem">
+              The Next-Generation Passenger EV Standard. Move People. Move Forward.
+            </p>
+            <address class="text-sm" style="margin-top: 1.5rem; font-style: normal; line-height: 1.6; color: #000000;">
+              <strong>Headquarters</strong><br>
+              805-6 Prosperity Millennia Plaza<br>
+              663 King’s Road, North Point,<br>
+              Hong Kong, Sar China
+            </address>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>
+            &copy; 2022 Clean Vehicle Solutions Limited. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+<!-- END: footer footer -->
+
+
+              
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const searchBtns = document.querySelectorAll('.search-btn');
+      const inlineSearchContainer = document.getElementById('inlineSearchContainer');
+      const inlineSearchForm = document.getElementById('inlineSearchForm');
+      const inlineSearchInput = document.getElementById('inlineSearchInput');
+      const inlineSearchResults = document.getElementById('inlineSearchResults');
+      
+      const pages = [
+        { title: 'Home', url: './index.html', desc: 'The Next-Generation Passenger EV Standard' },
+        { title: 'Products / Vehicles', url: './vehicles.html', desc: 'Browse our electric vehicle models' },
+        { title: 'eTRIKE', url: './vehicle.html?id=etrike', desc: 'Urban delivery and transport' },
+        { title: 'eSHUTTLE', url: './vehicle.html?id=eshuttle', desc: 'Resort and campus mobility' },
+        { title: 'BEV Deluxe', url: './vehicle.html?id=bevdeluxe', desc: 'Premium passenger transit' },
+        { title: 'eLine Bus', url: './vehicle.html?id=elinebus', desc: 'Mass transit solutions' },
+        { title: 'Technology', url: './technology.html', desc: 'Our advanced EV platforms and battery tech' },
+        { title: 'Savings Calculator', url: './solutions.html', desc: 'Calculate your fleet savings' },
+        { title: 'Compare Models', url: './compare.html', desc: 'Compare CLEVA electric vehicles side-by-side' },
+        { title: 'About Us', url: './about.html', desc: 'Our mission and history' },
+        { title: 'Contact Us', url: './contact.html', desc: 'Get in touch with our sales team' },
+        { title: 'Blog & Events', url: './blog.html', desc: 'Latest news, events, and updates from CLEVA' },
+        { title: 'Sustainability', url: './sustainability.html', desc: 'Our environmental commitments' },
+        { title: 'Privacy Policy', url: './privacy.html', desc: 'Our privacy commitments' },
+        { title: 'Terms of Service', url: './terms.html', desc: 'Terms of use' }
+      ];
+
+      searchBtns.forEach(btn => {
+        btn.addEventListener('click', (e) => {
+          e.preventDefault();
+          if (!inlineSearchContainer) return;
+          if (inlineSearchContainer.style.display === 'none') {
+            inlineSearchContainer.style.display = 'block';
+            setTimeout(() => inlineSearchInput.focus(), 100);
+          } else {
+            inlineSearchContainer.style.display = 'none';
+            inlineSearchResults.style.opacity = '0';
+            inlineSearchResults.style.visibility = 'hidden';
+            inlineSearchResults.style.marginTop = '0';
+            inlineSearchResults.style.padding = '0';
+            inlineSearchResults.style.borderColor = 'transparent';
+            inlineSearchInput.value = '';
+          }
+        });
+      });
+
+      const handleSearch = () => {
+        const query = inlineSearchInput.value.toLowerCase();
+        inlineSearchResults.innerHTML = '';
+        
+        if (!query.trim()) {
+            inlineSearchResults.style.opacity = '0';
+            inlineSearchResults.style.visibility = 'hidden';
+            inlineSearchResults.style.marginTop = '0';
+            inlineSearchResults.style.padding = '0';
+            inlineSearchResults.style.borderColor = 'transparent';
+            return;
+        }
+
+        inlineSearchResults.style.marginTop = '1rem';
+        inlineSearchResults.style.opacity = '1';
+        inlineSearchResults.style.visibility = 'visible';
+        inlineSearchResults.style.padding = '1rem';
+        inlineSearchResults.style.borderColor = 'var(--clr-border)';
+        
+        const results = pages.filter(p => p.title.toLowerCase().includes(query) || p.desc.toLowerCase().includes(query));
+        
+        if (results.length > 0) {
+          results.forEach(res => {
+            const el = document.createElement('a');
+            el.href = res.url;
+            el.style.display = 'block';
+            el.style.padding = '1rem';
+            el.style.border = '1px solid var(--clr-border)';
+            el.style.borderRadius = 'var(--radius-md)';
+            el.style.textDecoration = 'none';
+            el.style.color = 'var(--clr-text)';
+            el.style.background = 'rgba(255, 255, 255, 0.5)';
+            el.innerHTML = '<h3 style="margin-bottom: 0.25rem; color: var(--clr-primary); font-size: 1.1rem;">' + res.title + '</h3><p style="color: var(--clr-muted); font-size: 0.9rem; margin-bottom: 0;">' + res.desc + '</p>';
+            
+            el.addEventListener('mouseover', () => {
+              el.style.borderColor = 'var(--clr-primary)';
+              el.style.background = 'rgba(255, 255, 255, 0.9)';
+            });
+            el.addEventListener('mouseout', () => {
+              el.style.borderColor = 'var(--clr-border)';
+              el.style.background = 'rgba(255, 255, 255, 0.5)';
+            });
+
+            inlineSearchResults.appendChild(el);
+          });
+        } else {
+          inlineSearchResults.innerHTML = '<p style="color: var(--clr-muted); margin: 0;">No results found.</p>';
+        }
+      };
+
+      if (inlineSearchForm) inlineSearchForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        handleSearch();
+      });
+      
+      if (inlineSearchInput) inlineSearchInput.addEventListener('input', () => {
+        handleSearch();
+      });
+    });
+  </script>
+<script type="module" src="./js/main.js"></script>
+  <script type="module" src="./js/pages/vehicles.js"></script>
+  <script type="module" src="./js/pages/vehicle.js"></script>
+</body>
+</html>
