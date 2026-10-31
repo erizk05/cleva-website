@@ -1,0 +1,391 @@
+/* START FILE: navbar.css */
+/* START: NavBar styling */
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--clr-border);
+  z-index: 1000;
+  transition: box-shadow var(--duration-fast) var(--ease-out);
+}
+
+.navbar.scrolled {
+  box-shadow: var(--shadow-sm);
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  max-width: 1440px;
+}
+
+.logo-wrapper {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  text-decoration: none;
+}
+
+.logo-mark {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-svg {
+  width: 72px;
+  height: 72px;
+  transition: transform 0.6s var(--ease-out);
+  mix-blend-mode: multiply;
+  background: transparent;
+}
+
+.logo-wrapper:hover .logo-svg {
+  transform: rotate(360deg);
+}
+
+.logo-text-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.logo-title {
+  font-family: var(--font-display);
+  font-weight: 900;
+  font-size: var(--text-2xl);
+  color: #000000;
+  line-height: 1;
+  letter-spacing: -0.02em;
+}
+
+.logo-slogan {
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  color: var(--clr-primary-dark);
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  margin-top: -2px;
+}
+
+.logo-slogan::before {
+  content: "Clean Vehicle Solutions Limited";
+}
+
+.logo-wrapper:hover .logo-slogan::before {
+  content: "Cleaner Air for a Healthier Future";
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: clamp(0.55rem, 1vw, 1.15rem);
+}
+
+.nav-link {
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: #000000;
+  text-transform: uppercase;
+  transition: color var(--duration-fast) var(--ease-out);
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  white-space: nowrap;
+  letter-spacing: 0.02em;
+}
+
+.nav-tooltip {
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 50%;
+  transform: translateX(-50%) translateY(4px);
+  background-color: #0D1F1A;
+  color: #ffffff;
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 11px;
+  font-weight: 700;
+  font-family: var(--font-sans, system-ui, -apple-system, sans-serif);
+  line-height: 1.2;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  pointer-events: none;
+  opacity: 0;
+  visibility: hidden;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+  transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.2s ease;
+  z-index: 1050;
+}
+
+.nav-tooltip::before {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 0 5px 5px 5px;
+  border-style: solid;
+  border-color: transparent transparent #0D1F1A transparent;
+}
+
+.nav-link:hover .nav-tooltip,
+.nav-link:focus-visible .nav-tooltip {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(0);
+}
+
+.nav-link:hover, .nav-link.active {
+  color: var(--clr-primary);
+}
+
+.nav-link.active::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--clr-primary);
+  border-radius: 2px;
+}
+
+.nav-link.nav-link-disabled {
+  color: #8e9ca8;
+  cursor: not-allowed;
+  opacity: 0.75;
+}
+
+.nav-link.nav-link-disabled:hover {
+  color: #64748b;
+}
+
+.nav-link.nav-link-disabled::after {
+  display: none !important;
+}
+
+/* END: NavBar styling */
+
+/* START: Dropdown */
+
+.nav-item-dropdown {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: -20px;
+  background-color: var(--clr-bg);
+  min-width: 200px;
+  box-shadow: var(--shadow-md);
+  border: 1px solid var(--clr-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-2) 0;
+  z-index: 1000;
+  flex-direction: column;
+}
+
+.nav-item-dropdown:hover .submenu {
+  display: flex;
+}
+
+.submenu-link {
+  padding: 0.45rem var(--space-4);
+  color: #000000;
+  text-decoration: none;
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  transition: background-color var(--duration-fast), color var(--duration-fast);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  white-space: nowrap;
+}
+
+.submenu-link svg {
+  width: 13px;
+  height: 13px;
+  margin-left: 0.5rem;
+  flex-shrink: 0;
+}
+
+.submenu-link:hover {
+  background-color: var(--clr-bg-soft);
+  color: var(--clr-primary);
+}
+
+.submenu-item-dropdown {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.sub-submenu {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  background-color: var(--clr-bg);
+  min-width: 250px;
+  box-shadow: var(--shadow-md);
+  border: 1px solid var(--clr-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-2) 0;
+  z-index: 1001;
+  flex-direction: column;
+}
+
+.sub-submenu .submenu-link {
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.015em;
+  padding: 0.38rem var(--space-4);
+}
+
+.submenu-item-dropdown:hover .sub-submenu {
+  display: flex;
+}
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: var(--space-2);
+}
+
+.hamburger span {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background-color: var(--clr-text);
+  transition: all var(--duration-fast) var(--ease-out);
+}
+
+/* END: Dropdown */
+
+/* START: Mobile Nav */
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .nav-links {
+    gap: 0.5rem;
+  }
+  .nav-link {
+    font-size: 0.71rem;
+    letter-spacing: 0.01em;
+  }
+  .logo-title {
+    font-size: 1.25rem;
+  }
+  .logo-slogan {
+    font-size: 10.5px;
+  }
+  .logo-svg {
+    width: 58px;
+    height: 58px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    max-height: calc(100vh - 80px);
+    overflow-y: auto;
+    background-color: var(--clr-bg);
+    flex-direction: column;
+    padding: var(--space-4) var(--space-6);
+    box-shadow: var(--shadow-md);
+    border-bottom: 1px solid var(--clr-border);
+    gap: var(--space-2);
+  }
+  .nav-links .nav-link {
+    font-size: var(--text-sm);
+    white-space: normal;
+    padding: var(--space-2) 0;
+  }
+  .nav-links.open {
+    display: flex;
+  }
+  .nav-actions .btn {
+    display: none;
+  }
+  .hamburger {
+    display: flex;
+  }
+  .submenu {
+    position: static;
+    box-shadow: none;
+    border: none;
+    background: transparent;
+    padding-left: var(--space-4);
+    margin-top: var(--space-2);
+  }
+  .submenu-link {
+    font-size: 0.8rem;
+    white-space: normal;
+    padding: 0.35rem 0.5rem;
+  }
+  .sub-submenu {
+    position: static;
+    box-shadow: none;
+    border: none;
+    background: transparent;
+    padding-left: var(--space-4);
+    margin-top: 0;
+  }
+  .sub-submenu .submenu-link {
+    font-size: 0.74rem;
+    white-space: normal;
+    padding: 0.3rem 0.5rem;
+  }
+  .nav-link .nav-tooltip {
+    position: static;
+    transform: none !important;
+    display: inline-block;
+    margin-left: 8px;
+    padding: 2px 7px;
+    font-size: 10px;
+    opacity: 0;
+    visibility: hidden;
+    box-shadow: none;
+  }
+  .nav-link .nav-tooltip::before {
+    display: none;
+  }
+  .nav-link:hover .nav-tooltip,
+  .nav-link:focus-visible .nav-tooltip {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+/* END: Mobile Nav */
+/* END FILE: navbar.css */
