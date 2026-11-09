@@ -1,0 +1,276 @@
+/* START FILE: home.css */
+/* START: Home Hero Section */
+
+.hero {
+  position: relative;
+  padding-top: calc(80px + var(--space-12)); /* Account for fixed navbar */
+  padding-bottom: var(--space-20);
+  background-image: url('../../assets/images/accessible-ev-hero.jpg');
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  color: #fff;
+  min-height: 92vh;
+  display: flex;
+  align-items: center;
+}
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  /* Enhanced scrim gradient ensuring high contrast readability across all 5 structured lines */
+  background: linear-gradient(100deg, rgba(8, 20, 16, 0.88) 0%, rgba(8, 20, 16, 0.8) 45%, rgba(8, 20, 16, 0.5) 75%, rgba(8, 20, 16, 0.35) 100%);
+  z-index: 1;
+}
+.hero .container {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+}
+
+.hero-content {
+  max-width: 960px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.15rem;
+}
+
+/* Brand badge */
+.hero-brand-badge {
+  display: inline-flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #a7f3d0;
+  font-weight: 700;
+  padding: 5px 14px;
+  background: rgba(16, 185, 129, 0.15);
+  border: 1px solid rgba(52, 211, 153, 0.35);
+  border-radius: 6px;
+  width: fit-content;
+  backdrop-filter: blur(6px);
+}
+.brand-badge-dot {
+  color: #34d399;
+}
+.brand-badge-tag {
+  color: #e5e7eb;
+  font-weight: 500;
+}
+
+/* 1st line: Core Values */
+.hero-pillars-line {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem 0.65rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: #f3f4f6;
+  text-transform: uppercase;
+}
+.hero-pillars-line .pillar-item {
+  color: #ffffff;
+}
+.hero-pillars-line .pillar-bullet {
+  color: #34d399;
+  font-size: 0.9rem;
+}
+.hero-pillars-line .highlight-pillar {
+  color: #a7f3d0;
+  font-weight: 700;
+}
+
+/* 2nd line: Main Headline */
+.hero-title {
+  color: #ffffff;
+  font-size: clamp(2rem, 3.8vw, 3.25rem);
+  line-height: 1.15;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  margin: 0;
+  text-shadow: 0 2px 14px rgba(0, 0, 0, 0.45);
+}
+
+/* 3rd line: Subtitle */
+.hero-subtitle {
+  color: #d1fae5;
+  font-size: clamp(1.15rem, 2vw, 1.45rem);
+  line-height: 1.35;
+  font-weight: 600;
+  margin: 0;
+  text-shadow: 0 1px 8px rgba(0, 0, 0, 0.35);
+}
+
+/* 4th line: Commercial - Operational - PWD - Utility - Service - Personal - Mobility Solution */
+.hero-spectrum-line {
+  display: inline-flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.4rem 0.65rem;
+  padding: 0.65rem 1.15rem;
+  background: rgba(0, 0, 0, 0.4);
+  border-left: 3px solid #34d399;
+  border-radius: 0 8px 8px 0;
+  backdrop-filter: blur(10px);
+  width: fit-content;
+  max-width: 100%;
+  font-size: clamp(0.85rem, 1.4vw, 1rem);
+  font-weight: 500;
+  color: #f9fafb;
+}
+.hero-spectrum-line .spectrum-dash {
+  color: #34d399;
+  font-weight: 700;
+}
+.hero-spectrum-line .highlight-spectrum {
+  color: #a7f3d0;
+  font-weight: 700;
+}
+
+/* 5th line: Callout */
+.hero-cta-callout {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  padding-top: 0.25rem;
+}
+.cta-callout-heading {
+  font-size: clamp(1.2rem, 2vw, 1.45rem);
+  font-weight: 800;
+  color: #ffffff;
+  letter-spacing: -0.01em;
+}
+.cta-callout-subtext {
+  font-size: 1rem;
+  color: #e5e7eb;
+  line-height: 1.4;
+}
+
+.hero-actions {
+  display: flex;
+  gap: var(--space-4);
+  flex-wrap: wrap;
+  margin-top: 0.5rem;
+}
+
+.hero-visual {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+}
+
+.spec-block {
+  position: absolute;
+  top: 0;
+  right: 0;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.spec-block .title {
+  color: var(--clr-mono-dim);
+  font-size: var(--text-xs);
+}
+
+.spec-block .highlight {
+  color: #84cca1;
+  font-size: var(--text-sm);
+  font-weight: 600;
+}
+
+.spec-block .desc {
+  color: var(--clr-mono-dim);
+  font-size: var(--text-xs);
+}
+
+/* END: Home Hero Section */
+
+/* START: Vehicle SVG container */
+
+.vehicle-illustration {
+  width: 100%;
+  max-width: 500px;
+}
+
+/* END: Vehicle SVG container */
+
+/* START: Home Sections */
+
+.features-section {
+  background-color: rgba(245, 247, 245, 0.4);
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--space-8);
+  margin-top: var(--space-12);
+}
+
+.feature-card {
+  background: var(--clr-bg);
+  padding: var(--space-8);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--clr-border);
+}
+
+.feature-icon {
+  width: 48px;
+  height: 48px;
+  background-color: var(--clr-primary-light);
+  color: var(--clr-primary);
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: var(--space-4);
+}
+
+@media (max-width: 992px) {
+  .hero {
+    background-position: center center;
+    background-size: cover;
+    padding-top: calc(75px + var(--space-8));
+    padding-bottom: var(--space-16);
+    min-height: 85vh;
+  }
+  .hero-content {
+    max-width: 100%;
+  }
+  .hero-title {
+    font-size: 2rem;
+  }
+  .hero-subtitle {
+    font-size: 1.15rem;
+  }
+  .hero-pillars-line {
+    font-size: 0.85rem;
+    gap: 0.4rem 0.5rem;
+  }
+  .hero-spectrum-line {
+    font-size: 0.82rem;
+    padding: 0.5rem 0.85rem;
+    gap: 0.35rem 0.5rem;
+  }
+  .hero-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+  .hero-actions .btn {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* END: Home Sections */
+/* END FILE: home.css */
