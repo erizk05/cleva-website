@@ -93,10 +93,10 @@ document.addEventListener('DOMContentLoaded', () => {
     slide3 = './assets/images/pwd-side2.jpg';
     slide4 = './assets/images/pwd-draw.jpg';
   } else if (v.id === 'ev4-compact') {
-    slide1 = './assets/images/bev-compact.jpg';
-    slide2 = './assets/images/bev-homebase1-side.jpg';
-    slide3 = './assets/images/bev-compact.jpg';
-    slide4 = './assets/images/bev-homebase1-side.jpg';
+    slide1 = './assets/images/comp2-4.jpg';
+    slide2 = './assets/images/comp2-3.jpg';
+    slide3 = './assets/images/comp2-2.jpg';
+    slide4 = './assets/images/comp2-1.jpg';
   } else if (v.dummyImage) {
     slide1 = v.dummyImage;
     slide2 = v.dummyImage;
