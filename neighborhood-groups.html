@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Neighborhood Groups & HOA Community EV Mobility | C.L.E.V.A.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600;700&family=Plus+Jakarta+Sans:wght@700;800;900&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="./css/variables.css">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/typography.css">
+  <link rel="stylesheet" href="./css/layout.css">
+  <link rel="stylesheet" href="./css/components.css">
+  <link rel="stylesheet" href="./css/navbar.css">
+  <link rel="stylesheet" href="./css/footer.css">
+  <link rel="stylesheet" href="./css/animations.css">
+
+  <meta name="description" content="Community EV mobility solutions for Homeowners Associations (HOAs), residential subdivisions, and gated communities. Clean, quiet, and safe electric transit by C.L.E.V.A.">
+  <link rel="canonical" href="https://www.cleva-ev.com/neighborhood-groups.html">
+  <meta property="og:title" content="Neighborhood Groups & HOA Community EV Mobility | C.L.E.V.A.">
+  <meta property="og:description" content="Silent security patrols, gate-to-door community shuttles, and child-safe residential EV micro-fleets for modern subdivisions and HOAs.">
+  <meta property="og:url" content="https://www.cleva-ev.com/neighborhood-groups.html">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="./assets/images/logo.png">
+
+  <style>
+    .neighborhood-hero {
+      position: relative;
+      background: #ffffff;
+      color: #1a1a1a;
+      padding: calc(80px + var(--space-12)) var(--space-6) var(--space-16);
+      text-align: center;
+    }
+    .solution-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 16px;
+      border-radius: 20px;
+      background-color: #e8f5e9;
+      border: 1px solid #c8e6c9;
+      color: #2e7d32;
+      font-family: var(--font-mono, monospace);
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-bottom: var(--space-4);
+    }
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+    }
+    .feature-box {
+      background: #ffffff;
+      border: 1px solid var(--clr-border);
+      border-radius: 12px;
+      padding: 2.25rem 2rem;
+      box-shadow: var(--shadow-sm);
+      transition: all 0.3s ease;
+      display: flex;
+      flex-direction: column;
+    }
+    .feature-box:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-md);
+      border-color: var(--clr-primary-light);
+    }
+    .feature-icon {
+      width: 50px;
+      height: 50px;
+      border-radius: 10px;
+      background: #e8f5e9;
+      color: #2e7d32;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 1.25rem;
+    }
+    .hoa-form-card {
+      background: #ffffff;
+      border: 1px solid var(--clr-border);
+      border-radius: 16px;
+      padding: 2.5rem;
+      box-shadow: var(--shadow-lg);
+      max-width: 760px;
+      margin: 0 auto;
+    }
+  </style>
+</head>
+<body>
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="./index.html" class="logo-wrapper">
+        <div class="logo-mark">
+          <img src="./assets/images/logo.png" class="logo-svg" alt="CLEVA Logo">
+        </div>
+        <div class="logo-text-group">
+          <div class="logo-title">C.L.E.V.A</div>
+          <div class="logo-slogan"></div>
+        </div>
+      </a>
+      <div class="nav-links">
+        <a href="./index.html" class="nav-link">Home</a>
+        <a href="./about.html" class="nav-link">About Us</a>
+        <div class="nav-item-dropdown">
+          <a href="./vehicles.html" class="nav-link">C.L.E.V.A. PORTFOLIO</a>
+          <div class="submenu">
+            <div class="submenu-item-dropdown">
+              <a href="./vehicles.html?category=ev3" class="submenu-link">C.L.E.V.A TRICYCLES <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg></a>
+              <div class="sub-submenu">
+                <a href="./vehicle.html?id=etrike-toda" class="submenu-link">EV3 BEV TODA</a>
+                <a href="./vehicle.html?id=etrike-tt" class="submenu-link">EV3 BEV TUK-TUK</a>
+              </div>
+            </div>
+            <div class="submenu-item-dropdown">
+              <a href="./vehicles.html?category=ev4" class="submenu-link">C.L.E.V.A CARS <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg></a>
+              <div class="sub-submenu">
+                <a href="./vehicle.html?id=ev4-compact" class="submenu-link">EV4 COMPACT (2-Door)</a>
+                <a href="./vehicle.html?id=bevdeluxe" class="submenu-link">EV4 COMPACT (4-Door)</a>
+                <a href="./vehicle.html?id=ev4-family" class="submenu-link">EV4 FAMILY (4-Door)</a>
+                <a href="./vehicle.html?id=bev-weekender" class="submenu-link">EV4 WEEKENDER (5-DOOR)</a>
+                <a href="./vehicle.html?id=bev-sporty" class="submenu-link">EV4 SPORTY (2-Door)</a>
+                <a href="./vehicle.html?id=ev4-pwd" class="submenu-link">EV4(10) PWD WHEELCHAIR (6 PAX)</a>
+              </div>
+            </div>
+            <div class="submenu-item-dropdown">
+              <a href="./vehicles.html?category=commercial" class="submenu-link">C.L.E.V.A. COMMERCIAL <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg></a>
+              <div class="sub-submenu">
+                <a href="./vehicle.html?id=eshuttle" class="submenu-link">EV4 eSHUTTLE</a>
+                <a href="./vehicle.html?id=commercial-4pax-cargo" class="submenu-link">EV4 TWIN PAX/CARGO</a>
+                <a href="./vehicle.html?id=bev-utility" class="submenu-link">EV4 FLEXI PICKUP (1000KG)</a>
+                <a href="./vehicle.html?id=ev4-pax" class="submenu-link">EV4 TWIN CAB PICKUP (1200kg)</a>
+              </div>
+            </div>
+            <div class="submenu-item-dropdown">
+              <a href="javascript:void(0)" class="submenu-link menu-link-disabled" aria-disabled="true" onclick="event.preventDefault();" style="pointer-events: none; opacity: 0.6; cursor: not-allowed;"><span>C.L.E.V.A. AGRI DIVISION <span class="menu-badge-cs">Coming Soon</span></span> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg></a>
+              <div class="sub-submenu">
+                <a href="javascript:void(0)" class="submenu-link menu-link-disabled" aria-disabled="true" onclick="event.preventDefault();" style="pointer-events: none; opacity: 0.6; cursor: not-allowed;">TIPPERS <span class="menu-badge-cs">Coming Soon</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a href="./technology.html" class="nav-link">C.L.E.V.A TECHNOLOGY</a>
+        <div class="nav-item-dropdown">
+          <a href="#" class="nav-link">Tools</a>
+          <div class="submenu">
+            <a href="./calcsaving.html" class="submenu-link">Savings Calculator</a>
+          </div>
+        </div>
+        <a href="./team.html" class="nav-link">C.L.E.V.A. TEAM</a>
+        <a href="./contact.html" class="nav-link">Contact Us</a>
+        <a href="javascript:void(0)" class="nav-link nav-link-disabled" aria-disabled="true" aria-label="News – Coming Soon" onclick="event.preventDefault();">News<span class="nav-tooltip">Coming Soon</span></a>
+      </div>
+      <div class="nav-actions">
+        <button class="search-btn" aria-label="Search" style="background: none; border: none; cursor: pointer; color: var(--clr-text); display: flex; align-items: center; justify-content: center; width: 40px; height: 40px;">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+        </button>
+        <button class="hamburger" aria-label="Toggle Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+    <div id="inlineSearchContainer" style="display: none; width: 100%; padding: 1.5rem 0; border-top: 1px solid var(--clr-border);">
+      <div class="container" style="display: flex; flex-direction: column; align-items: center; position: relative;">
+        <form id="inlineSearchForm" style="display: flex; gap: 0.75rem; margin-bottom: 0; width: 100%; max-width: 800px; justify-content: center;">
+          <input type="text" id="inlineSearchInput" placeholder="Search neighborhood solutions, vehicles..." style="flex: 1; padding: 0.6rem 1.5rem; font-size: 1rem; border: 1px solid rgba(13, 31, 26, 0.15); border-radius: 10px; background: rgba(255, 255, 255, 0.9); color: var(--clr-text); outline: none; transition: all 0.3s ease;" required>
+          <button type="submit" class="btn btn-primary" style="padding: 0.6rem 1.5rem; border-radius: 10px; font-size: 1rem;">Search</button>
+        </form>
+        <div id="inlineSearchResults" style="position: absolute; top: 100%; left: 0; right: 0; margin: 0 auto; width: 100%; max-width: 800px; display: flex; flex-direction: column; gap: 0.5rem; max-height: 60vh; overflow-y: auto; background: white; border-radius: var(--radius-md); box-shadow: var(--shadow-lg); z-index: 1000; opacity: 0; visibility: hidden; border: 1px solid transparent; padding: 0; transition: all 0.3s ease;"></div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- MAIN CONTENT -->
+  <main>
+    <!-- HERO -->
+    <section class="neighborhood-hero">
+      <div class="container" style="max-width: 960px; position: relative; z-index: 2;">
+        <span class="solution-pill">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+          COMMUNITY & HOA MOBILITY
+        </span>
+        <h1 class="font-display" style="font-size: clamp(1.6rem, 2.8vw, 2.25rem); line-height: 1.25; font-weight: 800; margin-bottom: 1.25rem; color: #1a1a1a;">
+          Quiet, Safe & Sustainable Transit for <span style="color: var(--clr-primary);">Neighborhoods & HOAs</span>
+        </h1>
+        <p style="font-size: 1.1rem; line-height: 1.65; color: #4a4a4a; max-width: 760px; margin: 0 auto 2rem;">
+          Transform your residential community, gated subdivision, or campus into a serene, emission-free haven. C.L.E.V.A. provides dedicated internal community shuttles, silent 24/7 security patrols, and shared EV mobility programs.
+        </p>
+        <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+          <a href="./contact.html" class="btn btn-primary" style="padding: 0.85rem 2.5rem; font-weight: 700;">Contact Us About Community Programs</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CORE COMMUNITY ADVANTAGES -->
+    <section class="section" style="padding: 5rem 0; background-color: #f9fafb; border-top: 1px solid var(--clr-border);">
+      <div class="container">
+        <div style="text-align: center; max-width: 780px; margin: 0 auto 3.5rem;">
+          <span style="color: var(--clr-primary); font-weight: 700; text-transform: uppercase; font-size: 0.85rem; letter-spacing: 1px;">PEACE OF MIND FOR FAMILIES</span>
+          <h2 class="font-display" style="font-size: clamp(1.8rem, 3vw, 2.4rem); font-weight: 800; color: #1a1a1a; margin-top: 0.5rem; margin-bottom: 1rem;">
+            Why Modern Subdivisions Choose C.L.E.V.A.
+          </h2>
+          <p style="color: var(--clr-text-2); font-size: 1.05rem; line-height: 1.6;">
+            Eliminating gasoline fumes, loud revving engines, and driveway congestion with purpose-engineered neighborhood electric vehicles.
+          </p>
+        </div>
+
+        <div class="feature-grid">
+          <!-- Box 1 -->
+          <div class="feature-box">
+            <div class="feature-icon">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <h3 style="font-size: 1.3rem; font-weight: 800; margin-bottom: 0.75rem; color: #1a1a1a;">Silent 24/7 Security Patrols</h3>
+            <p style="color: var(--clr-text-2); line-height: 1.6; font-size: 0.95rem; margin-bottom: 1rem;">
+              Security guards can conduct perimeter checks at 2 AM without awakening sleeping families or barking dogs. Officers have full sensory awareness to hear subtle surroundings.
+            </p>
+            <div style="color: var(--clr-primary); font-weight: 700; font-size: 0.88rem;">• Zero Engine Vibration & Noise</div>
+          </div>
+
+          <!-- Box 2 -->
+          <div class="feature-box">
+            <div class="feature-icon">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="3" width="15" height="13"></rect><polygon points="16 8 20 8 23 11 23 16 16 16 8"></polygon><circle cx="5.5" cy="18.5" r="2.5"></circle><circle cx="18.5" cy="18.5" r="2.5"></circle></svg>
+            </div>
+            <h3 style="font-size: 1.3rem; font-weight: 800; margin-bottom: 0.75rem; color: #1a1a1a;">Gate-to-Door Feeder Shuttles</h3>
+            <p style="color: var(--clr-text-2); line-height: 1.6; font-size: 0.95rem; margin-bottom: 1rem;">
+              Provide reliable, air-conditioned or breeze-ventilated transit from the main guard gate to inner cul-de-sacs. Ideal for elderly residents, school children, and household staff.
+            </p>
+            <div style="color: var(--clr-primary); font-weight: 700; font-size: 0.88rem;">• Eliminates Long Walks with Groceries</div>
+          </div>
+
+          <!-- Box 3 -->
+          <div class="feature-box">
+            <div class="feature-icon">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+            </div>
+            <h3 style="font-size: 1.3rem; font-weight: 800; margin-bottom: 0.75rem; color: #1a1a1a;">Safe Speed-Governed Drivetrains</h3>
+            <p style="color: var(--clr-text-2); line-height: 1.6; font-size: 0.95rem; margin-bottom: 1rem;">
+              Programmable speed limiters (e.g. 20-30 kph) prevent reckless speeding inside residential streets where children play on sidewalks and bikes.
+            </p>
+            <div style="color: var(--clr-primary); font-weight: 700; font-size: 0.88rem;">• High Visibility & Automatic Braking</div>
+          </div>
+
+          <!-- Box 4 -->
+          <div class="feature-box">
+            <div class="feature-icon">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+            </div>
+            <h3 style="font-size: 1.3rem; font-weight: 800; margin-bottom: 0.75rem; color: #1a1a1a;">Shared Community EV Pods</h3>
+            <p style="color: var(--clr-text-2); line-height: 1.6; font-size: 0.95rem; margin-bottom: 1rem;">
+              HOAs can implement community-shared compact EVs at the clubhouse for residents to borrow for quick market trips, reducing the need for second and third household cars.
+            </p>
+            <div style="color: var(--clr-primary); font-weight: 700; font-size: 0.88rem;">• Decongests Narrow Residential Curbs</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-col">
+          <a href="./index.html" class="footer-logo">
+            <div class="logo-mark">
+              <img src="./assets/images/logo.png" class="logo-svg" alt="CLEVA Logo">
+            </div>
+            <div class="logo-text-group">
+              <div class="footer-logo-title">C.L.E.V.A</div>
+              <div class="footer-logo-slogan"></div>
+            </div>
+          </a>
+          <p class="text-sm" style="margin-top: 1rem; color: #000000;">The Next-Generation Passenger EV Standard. Move People. Move Forward.</p>
+          <address class="text-sm" style="margin-top: 1.5rem; font-style: normal; line-height: 1.6; color: #000000;">
+            <strong>Headquarters</strong><br>
+            805-6 Prosperity Millennia Plaza<br>
+            663 King’s Road, North Point,<br>
+            Hong Kong, SAR China<br>
+            <a href="mailto:Info@clevasolutions.com" style="color: inherit; text-decoration: underline;">Info@clevasolutions.com</a>
+          </address>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+            </a>
+            <a href="#" aria-label="YouTube">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33 2.78 2.78 0 0 0 1.94 2c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.33 29 29 0 0 0-.46-5.33z"></path><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon></svg>
+            </a>
+            <a href="#" aria-label="X">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+            <a href="#" aria-label="Instagram">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+            </a>
+            <a href="#" aria-label="LinkedIn">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer-col footer-col-portfolio">
+          <h4>C.L.E.V.A. PORTFOLIO</h4>
+          <ul>
+            <li><a href="./vehicles.html?category=ev3">EV3 WHEELERS – PUBLIC COMMUNITY TRANSPORT</a></li>
+            <li><a href="./vehicles.html?category=ev4">EV4 WHEELERS – PRIVATE MOBILITY</a></li>
+            <li><a href="./vehicles.html?category=commercial">EV4 WHEELERS – COMMERCIAL & SOCIAL MOBILITY SERVICES</a></li>
+            <li><a href="./vehicles.html?category=agri">EV3 WHEELERS – AGRICULTURAL DIVISION – FROM FIELD TO SHOP</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Solutions</h4>
+          <ul>
+            <li><a href="./local-government.html">Local Government Services</a></li>
+            <li><a href="./neighborhood-groups.html">Neighborhood Groups</a></li>
+            <li><a href="./pwd-mobility.html">Special Interest Needs (PWD)</a></li>
+            <li><a href="./calcsaving.html">Savings Calculator</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="./about.html">About Us</a></li>
+            <li><a href="./team.html">C.L.E.V.A. TEAM</a></li>
+            <li><a href="./technology.html">C.L.E.V.A. TECHNOLOGY</a></li>
+            <li><a href="./contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Newsletter</h4>
+          <p class="text-sm" style="margin-bottom: 1rem; color: #000000;">Subscribe to receive updates on our latest vehicles and solutions.</p>
+          <form action="https://api.web3forms.com/submit" method="POST" style="display: flex; flex-direction: column; gap: 0.5rem;">
+            <input type="hidden" name="access_key" value="0e611da2-d85a-4299-a3cd-2e8b34568ee6">
+            <input type="text" name="name" placeholder="Full Name" required style="padding: 0.5rem; border: 1px solid rgba(0, 0, 0, 0.2); border-radius: var(--radius-md); background: rgba(255,255,255,0.1); color: #000000;" class="newsletter-input">
+            <input type="email" name="email" placeholder="Your email address" required style="padding: 0.5rem; border: 1px solid rgba(0, 0, 0, 0.2); border-radius: var(--radius-md); background: rgba(255,255,255,0.1); color: #000000;" class="newsletter-input">
+            <input type="text" name="location" placeholder="Location" required style="padding: 0.5rem; border: 1px solid rgba(0, 0, 0, 0.2); border-radius: var(--radius-md); background: rgba(255,255,255,0.1); color: #000000;" class="newsletter-input">
+            <button type="submit" class="btn btn-primary" style="padding: 0.5rem; width: 100%; border: none;">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p style="color: #000000;">&copy; 2026 Clean Vehicle Solutions Limited. All rights reserved.</p>
+        <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+          <a href="./privacy.html">Privacy Policy</a>
+          <a href="./terms.html">Terms of Service</a>
+          <a href="./sustainability.html">Sustainability Policies</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const searchBtns = document.querySelectorAll('.search-btn');
+      const inlineSearchContainer = document.getElementById('inlineSearchContainer');
+      const inlineSearchForm = document.getElementById('inlineSearchForm');
+      const inlineSearchInput = document.getElementById('inlineSearchInput');
+      const inlineSearchResults = document.getElementById('inlineSearchResults');
+      
+      const pages = [
+        { title: 'Home', url: './index.html', desc: 'The Next-Generation Passenger EV Standard' },
+        { title: 'Products / Vehicles', url: './vehicles.html', desc: 'Browse our electric vehicle models' },
+        { title: 'eTRIKE-TODA', url: './vehicle.html?id=etrike-toda', desc: 'Urban public transport tricycle' },
+        { title: 'eSHUTTLE', url: './vehicle.html?id=eshuttle', desc: 'Resort and campus community mobility' },
+        { title: 'COMPACT / 4-Door', url: './vehicle.html?id=bevdeluxe', desc: 'Compact 4-door passenger transit' },
+        { title: 'PWD Wheelchair / 6-10 PAX', url: './vehicle.html?id=ev4-pwd', desc: 'Accessible wheelchair transit' },
+        { title: 'Technology', url: './technology.html', desc: 'Our advanced EV platforms and battery tech' },
+        { title: 'Savings Calculator', url: './calcsaving.html', desc: 'Calculate your fleet savings' },
+        { title: 'Local Government Services', url: './local-government.html', desc: 'Municipal EV fleet solutions & TODA modernization' },
+        { title: 'Neighborhood Groups', url: './neighborhood-groups.html', desc: 'HOA community EV transit & silent patrols' },
+        { title: 'Special Interest Needs (PWD)', url: './pwd-mobility.html', desc: 'Accessible wheelchair EV transit & adaptive controls' },
+        { title: 'About Us', url: './about.html', desc: 'Our mission and history' },
+        { title: 'C.L.E.V.A. TEAM', url: './team.html', desc: 'The people driving sustainable mobility' },
+        { title: 'Contact Us', url: './contact.html', desc: 'Get in touch with our sales team' }
+      ];
+
+      searchBtns.forEach(btn => {
+        btn.addEventListener('click', (e) => {
+          e.preventDefault();
+          if (!inlineSearchContainer) return;
+          if (inlineSearchContainer.style.display === 'none') {
+            inlineSearchContainer.style.display = 'block';
+            setTimeout(() => inlineSearchInput.focus(), 100);
+          } else {
+            inlineSearchContainer.style.display = 'none';
+            inlineSearchResults.style.opacity = '0';
+            inlineSearchResults.style.visibility = 'hidden';
+            inlineSearchResults.style.marginTop = '0';
+            inlineSearchResults.style.padding = '0';
+            inlineSearchResults.style.borderColor = 'transparent';
+            inlineSearchInput.value = '';
+          }
+        });
+      });
+
+      const handleSearch = () => {
+        const query = inlineSearchInput.value.toLowerCase();
+        inlineSearchResults.innerHTML = '';
+        
+        if (!query.trim()) {
+          inlineSearchResults.style.opacity = '0';
+          inlineSearchResults.style.visibility = 'hidden';
+          inlineSearchResults.style.marginTop = '0';
+          inlineSearchResults.style.padding = '0';
+          inlineSearchResults.style.borderColor = 'transparent';
+          return;
+        }
+
+        inlineSearchResults.style.marginTop = '1rem';
+        inlineSearchResults.style.opacity = '1';
+        inlineSearchResults.style.visibility = 'visible';
+        inlineSearchResults.style.padding = '1rem';
+        inlineSearchResults.style.borderColor = 'var(--clr-border)';
+        
+        const results = pages.filter(p => p.title.toLowerCase().includes(query) || p.desc.toLowerCase().includes(query));
+        
+        if (results.length > 0) {
+          results.forEach(res => {
+            const el = document.createElement('a');
+            el.href = res.url;
+            el.style.display = 'block';
+            el.style.padding = '0.75rem';
+            el.style.borderBottom = '1px solid var(--clr-border)';
+            el.style.textDecoration = 'none';
+            el.innerHTML = '<h3 style="margin-bottom: 0.25rem; color: var(--clr-primary); font-size: 1.05rem;">' + res.title + '</h3><p style="color: var(--clr-muted); font-size: 0.85rem; margin-bottom: 0;">' + res.desc + '</p>';
+            inlineSearchResults.appendChild(el);
+          });
+        } else {
+          inlineSearchResults.innerHTML = '<p style="color: var(--clr-muted); margin: 0; padding: 0.5rem;">No results found.</p>';
+        }
+      };
+
+      if (inlineSearchForm) inlineSearchForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        handleSearch();
+      });
+      
+      if (inlineSearchInput) inlineSearchInput.addEventListener('input', () => {
+        handleSearch();
+      });
+    });
+  </script>
+  <script type="module" src="./js/main.js"></script>
+</body>
+</html>
