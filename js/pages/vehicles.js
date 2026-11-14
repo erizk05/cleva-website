@@ -89,7 +89,7 @@ const VEHICLES = [
   
   {
     "id": "ev4-compact",
-    "name": "EV4 COMPACT / (2-Door)",
+    "name": "EV4 COMPACT (2-Door)",
     "category": "ev4",
     "badge": "Passenger",
     "badgeColor": "green",
